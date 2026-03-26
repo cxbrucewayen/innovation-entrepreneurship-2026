@@ -1,0 +1,198 @@
+{
+  "$schema": "https://flowcopilot.dev/schema/flow.v1.json",
+  "name": "自动化科研流程",
+  "description": "文献检索与综述 → 创新方案设计（含3轮反思迭代）→ 实验设计 → 框架搜集与基线搭建 → 循环实现与二次开发 → 实验规划与步骤拆解 → 循环执行实验",
+  "version": "1.0.0",
+  "defaultModel": "claude-opus-4.5",
+
+  "steps": [
+    {
+      "id": "literature-survey",
+      "name": "Phase 1 — 文献检索与综述",
+      "type": "single",
+      "promptTemplate": "research-survey.prompt.md",
+      "model": null,
+      "input": {
+        "source": "user",
+        "description": "用户的研究课题描述（含研究方向、关键词、期望目标）"
+      },
+      "output": {
+        "type": "file",
+        "path": "${context.outputDir}/references.md",
+        "description": "论文综述文档（含每篇论文的摘要、方法、贡献、局限性总结）"
+      }
+    },
+    {
+      "id": "innovation-design",
+      "name": "Phase 2a — 创新方案初始设计",
+      "type": "single",
+      "promptTemplate": "research-innovation.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "literature-survey"
+      },
+      "output": {
+        "type": "file",
+        "path": "${context.outputDir}/methodology-draft.md",
+        "description": "创新方法论初稿（第一性原理驱动的初始方案设计）"
+      }
+    },
+    {
+      "id": "innovation-reflect-1",
+      "name": "Phase 2b — 第1轮反思与改进",
+      "type": "single",
+      "promptTemplate": "research-innovation-reflect.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "innovation-design"
+      },
+      "output": {
+        "type": "file",
+        "path": "${context.outputDir}/methodology-v2.md",
+        "description": "第1轮反思改进后的方法论文档"
+      }
+    },
+    {
+      "id": "innovation-reflect-2",
+      "name": "Phase 2c — 第2轮反思与改进",
+      "type": "single",
+      "promptTemplate": "research-innovation-reflect.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "innovation-reflect-1"
+      },
+      "output": {
+        "type": "file",
+        "path": "${context.outputDir}/methodology-v3.md",
+        "description": "第2轮反思改进后的方法论文档"
+      }
+    },
+    {
+      "id": "innovation-reflect-3",
+      "name": "Phase 2d — 第3轮终审与定稿",
+      "type": "single",
+      "promptTemplate": "research-innovation-reflect.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "innovation-reflect-2"
+      },
+      "output": {
+        "type": "file",
+        "path": "${context.outputDir}/methodology.md",
+        "description": "经3轮反思迭代后的最终方法论文档（含技术路线、算法设计、理论分析）"
+      }
+    },
+    {
+      "id": "experiment-design",
+      "name": "Phase 3 — 实验设计",
+      "type": "single",
+      "promptTemplate": "research-experiment.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "innovation-reflect-3"
+      },
+      "output": {
+        "type": "file",
+        "path": "${context.outputDir}/experiment-design.md",
+        "description": "实验设计文档（含数据集、评估指标、基线方法、消融实验计划）"
+      }
+    },
+    {
+      "id": "framework-setup",
+      "name": "Phase 4 — 框架搜集与基线搭建",
+      "type": "single",
+      "promptTemplate": "research-framework.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "experiment-design"
+      },
+      "output": {
+        "type": "json",
+        "path": ".flowcopilot/output/research-steps.json",
+        "schema": "steps-schema.json",
+        "description": "实现步骤的原子化拆解（含框架搭建、模块实现、实验脚本）"
+      }
+    },
+    {
+      "id": "implement",
+      "name": "Phase 5 — 循环实现与二次开发",
+      "type": "loop",
+      "promptTemplate": "research-implement.prompt.md",
+      "model": "claude-opus-4.5",
+      "loop": {
+        "source": "previousStep",
+        "stepId": "framework-setup",
+        "itemVariable": "currentStep",
+        "newChatPerItem": true
+      },
+      "output": {
+        "type": "json",
+        "path": ".flowcopilot/output/step_complete.json",
+        "description": "步骤完成标记 JSON 文件"
+      }
+    },
+    {
+      "id": "experiment-plan",
+      "name": "Phase 6 — 实验规划与步骤拆解",
+      "type": "single",
+      "promptTemplate": "research-experiment-plan.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "implement"
+      },
+      "output": {
+        "type": "json",
+        "path": ".flowcopilot/output/experiment-steps.json",
+        "schema": "steps-schema.json",
+        "description": "实验步骤的原子化拆解（含基线运行、消融实验、图表生成、报告撰写）"
+      }
+    },
+    {
+      "id": "experiment-loop",
+      "name": "Phase 7 — 循环执行实验步骤",
+      "type": "loop",
+      "promptTemplate": "research-experiment-loop.prompt.md",
+      "model": "claude-opus-4.5",
+      "loop": {
+        "source": "previousStep",
+        "stepId": "experiment-plan",
+        "itemVariable": "currentStep",
+        "newChatPerItem": true
+      },
+      "output": {
+        "type": "json",
+        "path": ".flowcopilot/output/experiment_step_complete.json",
+        "description": "实验步骤完成标记 JSON 文件"
+      }
+    }
+  ],
+
+  "context": {
+    "projectName": "${workspaceFolderBasename}",
+    "language": "Python",
+    "framework": "PyTorch",
+    "targetFeature": "",
+    "targetDescription": "",
+    "outputDir": "research-output",
+    "researchDomain": "",
+    "keywords": "",
+    "paperSources": "arXiv, Semantic Scholar, Google Scholar, DBLP",
+    "maxPapers": 20,
+    "experimentConfig": {
+      "gpu": "auto",
+      "seed": 42,
+      "epochs": 100,
+      "batchSize": 32
+    },
+    "typeCheckCommand": "python -m mypy src/ --ignore-missing-imports",
+    "testCommand": "python -m pytest tests/ -v",
+    "e2eFramework": "playwright"
+  }
+}

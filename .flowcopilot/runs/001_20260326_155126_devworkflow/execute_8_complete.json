@@ -1,0 +1,7 @@
+{
+  "stepId": 8,
+  "title": "删除 cxcyplan.cls 中不需要的功能模块代码",
+  "status": "completed",
+  "completedAt": "2026-03-26T16:10:00.000Z",
+  "summary": "已删除 cxcyplan.cls 中的 9 个不需要的功能模块：minted 宏包及其配置、ifdefined\\blind 盲审条件判断、\\inputcode/\\code/codeblock 代码命令、\\makedisclaim 声明函数体、\\makecabstract/\\makeeabstract/\\makeabstract 摘要函数体、\\makelistoffiguretable 图表目录函数体、\\makeblindpage 盲审封面函数体，每处均保留中文注释说明已移除以便追溯。"
+}

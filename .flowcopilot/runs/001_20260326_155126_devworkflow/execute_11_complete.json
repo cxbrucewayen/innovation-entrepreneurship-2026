@@ -1,0 +1,7 @@
+{
+  "stepId": 11,
+  "title": "调整全局行距为 1.5 倍",
+  "status": "completed",
+  "completedAt": "2026-03-26T09:00:00.000Z",
+  "summary": "在 cxcyplan.cls 中将全局 \\baselinestretch 从 1.2 改为 1.5，并同步更新 \\mainmatter 和 \\backmatter 末尾的 \\linespread 设置；目录区的 1.2 行距按规范保留。"
+}

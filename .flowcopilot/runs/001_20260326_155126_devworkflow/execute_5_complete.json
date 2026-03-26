@@ -1,0 +1,7 @@
+{
+  "stepId": 5,
+  "title": "重写封面生成函数 \\makeCover",
+  "status": "completed",
+  "completedAt": "2026-03-26T16:30:00.000Z",
+  "summary": "在 cxcyplan.cls 中将原空占位函数 \\makeUndergraduateCover 整体替换为完整的 \\makeCover 命令，实现创新创业计划书封面（titlepage + LOGO + 项目名称 + 副标题 + 信息表 + 条件公司名称行 + 底部日期），并同步更新 \\makefirstpage 中的调用引用。"
+}

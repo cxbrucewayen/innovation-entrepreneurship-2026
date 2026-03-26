@@ -1,0 +1,7 @@
+{
+  "stepId": 2,
+  "title": "复制 wzuthesis.cls 为 cxcyplan.cls 并修改文档类声明",
+  "status": "completed",
+  "completedAt": "2026-03-26T08:00:00.000Z",
+  "summary": "已将 wzuthesis.cls 复制为 cxcyplan.cls，更新顶部注释为中国国际大学生创新创业计划书说明，并在 \\NeedsTeXFormat 后添加 \\ProvidesClass{cxcyplan}[2026/03/26 v1.0 中国国际大学生创新创业计划书文档类] 声明。"
+}

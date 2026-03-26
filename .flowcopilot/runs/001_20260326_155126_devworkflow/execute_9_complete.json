@@ -1,0 +1,7 @@
+{
+  "stepId": 9,
+  "title": "重构章节编号体系（中文数字格式，高风险）",
+  "status": "completed",
+  "completedAt": "2026-03-26T16:30:00.000Z",
+  "summary": "在 cxcyplan.cls 的 \\mainmatter 中将章节编号体系改为中文格式：chapter 用 \\chinese{chapter}+顿号（一、），section 用 \\chinese{section}+圆括号（（一）），subsection 用 \\arabic{subsection}+点（1.），同步更新 tocloft 目录编号宽度（cftchapnumwidth=2em、cftsecnumwidth=3em、cftsubsecnumwidth=2em）及 \\chaptermark 页眉标记。"
+}

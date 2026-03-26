@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schemas/flow.schema.json",
+  "name": "毕业答辩演示流程",
+  "description": "轻量结构扫描 → 步骤拆解(含论文章节映射) → 循环按需深读+生成HTML",
+  "version": "1.1.0",
+  "defaultModel": "claude-opus-4.5",
+
+  "steps": [
+    {
+      "id": "thesis-design",
+      "name": "Phase 1 — 轻量结构扫描与演示骨架设计",
+      "type": "single",
+      "promptTemplate": "thesis-design.prompt.md",
+      "model": null,
+      "input": {
+        "source": "user",
+        "description": "用户的答辩演示需求描述（风格偏好、重点章节、时间限制等）"
+      },
+      "output": {
+        "type": "file",
+        "path": "${context.outputDir}/thesis-slide-design.md",
+        "description": "演示骨架设计文档（不含论文深度内容，仅含结构映射与版式规划）"
+      }
+    },
+    {
+      "id": "thesis-plan",
+      "name": "Phase 2 — 步骤拆解与论文章节映射",
+      "type": "single",
+      "promptTemplate": "thesis-plan.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "thesis-design"
+      },
+      "output": {
+        "type": "json",
+        "path": ".flowcopilot/output/steps.json",
+        "schema": "steps-schema.json",
+        "description": "逐页生成步骤列表（每步含需读取的论文章节路径）"
+      }
+    },
+    {
+      "id": "thesis-html",
+      "name": "Phase 3 — 循环按需深读论文+生成HTML页面",
+      "type": "loop",
+      "promptTemplate": "thesis-html.prompt.md",
+      "model": "claude-opus-4.5",
+      "loop": {
+        "source": "previousStep",
+        "stepId": "thesis-plan",
+        "itemVariable": "currentStep",
+        "newChatPerItem": true
+      },
+      "output": {
+        "type": "json",
+        "path": ".flowcopilot/output/step_complete.json",
+        "description": "步骤完成标记 JSON 文件（每个子步骤在 runs 目录独立生成）"
+      }
+    }
+  ],
+
+  "context": {
+    "projectName": "${workspaceFolderBasename}",
+    "language": "LaTeX",
+    "thesisDir": ".",
+    "thesisMainFile": "",
+    "slidesOutputDir": "defense-slides",
+    "theme": "",
+    "totalMinutes": 10,
+    "outputDir": "docs",
+    "author": "",
+    "university": "",
+    "department": "",
+    "advisor": "",
+    "defenseDate": "",
+    "thesisTitle": "",
+    "universityLogo": ""
+  }
+}

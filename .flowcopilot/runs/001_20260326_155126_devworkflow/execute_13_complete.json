@@ -1,0 +1,7 @@
+{
+  "stepId": 13,
+  "title": "重写 main.tex 正文九章骨架结构",
+  "status": "completed",
+  "completedAt": "2026-03-26T08:30:00.000Z",
+  "summary": "将 main.tex 的 \\begin{document}...\\end{document} 正文部分完全重写为创新创业计划书的九章骨架结构，保留前置三个骨架命令，删除原学术论文章节，原参考文献调用用 \\iffalse...\\fi 包裹。"
+}

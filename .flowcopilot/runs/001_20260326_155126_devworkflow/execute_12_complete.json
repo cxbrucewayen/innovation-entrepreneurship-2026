@@ -1,0 +1,7 @@
+{
+  "stepId": 12,
+  "title": "重写 main.tex 文档头部与元信息填写区",
+  "status": "completed",
+  "completedAt": "2026-03-26T08:00:00.000Z",
+  "summary": "已完成 main.tex 文档类切换、元信息区重写、新增 cflypage 及不兼容宏包清理。"
+}

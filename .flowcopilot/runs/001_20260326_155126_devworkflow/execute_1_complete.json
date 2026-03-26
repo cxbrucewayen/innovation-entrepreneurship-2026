@@ -1,0 +1,7 @@
+{
+  "stepId": 1,
+  "title": "备份原始 wzuthesis.cls 文件",
+  "status": "completed",
+  "completedAt": "2026-03-26T08:30:00.000Z",
+  "summary": "已将 wzuthesis.cls（24813字节）复制为 wzuthesis.cls.bak，两文件内容完全一致，备份作为后续改造的恢复基准。"
+}

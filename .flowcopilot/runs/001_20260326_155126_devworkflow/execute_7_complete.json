@@ -1,0 +1,7 @@
+{
+  "stepId": 7,
+  "title": "修改 \\makefirstpage 调用链",
+  "status": "completed",
+  "completedAt": "2026-03-26T08:30:00.000Z",
+  "summary": "将 cxcyplan.cls 中 \\makefirstpage 的 \\else 分支由旧五步调用链（\\makeCover → \\makedisclaim → \\makeabstract → \\maketableofcontents → \\makelistoffiguretable）精简为新三步调用链（\\makeCover → \\makeFlyPage → \\maketableofcontents），删除了 \\makedisclaim、\\makeabstract、\\makelistoffiguretable 三行调用，并在 \\makeCover 与 \\maketableofcontents 之间插入 \\makeFlyPage 调用。"
+}

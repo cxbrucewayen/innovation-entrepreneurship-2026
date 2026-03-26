@@ -1,0 +1,7 @@
+{
+  "stepId": 17,
+  "title": "清理 image/ 目录下的学术论文示例图片",
+  "status": "completed",
+  "completedAt": "2026-03-26T10:00:00.000Z",
+  "summary": "删除了 image/ 下的旧示例图片（figure.png、table.png、作者信息.png、标题使用.png）及 chap04/ 子目录中的 1.jpg、2.jpg，删除了根目录 vscode.png，创建了 image/README.txt 使用说明，保留了 title.png 和 image/chap04/ 目录。"
+}

@@ -1,0 +1,7 @@
+{
+  "stepId": 6,
+  "title": "新增扉页生成函数 \\makeFlyPage",
+  "status": "completed",
+  "completedAt": "2026-03-26T08:30:00.000Z",
+  "summary": "在 cxcyplan.cls 的 \\makeCover 定义之后新增了 \\makeFlyPage 命令，实现了带标题「项目简介」、1.8倍行距宋体正文、无页眉页脚的扉页生成函数。"
+}

@@ -1,0 +1,7 @@
+{
+  "stepId": 14,
+  "title": "首次编译测试（XeLaTeX 单遍）",
+  "status": "completed",
+  "completedAt": "2026-03-26T18:51:14.000Z",
+  "summary": "执行 xelatex -interaction=nonstopmode main.tex，退出码 0，成功生成 main.pdf（12页，213.9KB）；九章中文数字编号（一～九）、封面/扉页/目录结构全部正常，无 fatal 编译错误。"
+}

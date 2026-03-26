@@ -1,0 +1,7 @@
+{
+  "stepId": 4,
+  "title": "新增创新创业计划书专用元信息宏定义",
+  "status": "completed",
+  "completedAt": "2026-03-26T09:00:00.000Z",
+  "summary": "在 cxcyplan.cls 元信息宏定义区新增 8 个宏命令（\\csubtitle、\\cphone、\\csaidao、\\czubie、\\cprovince、\\cschool、\\ccompany、\\cflypage）及各自默认值，确保 main.tex 漏填时不编译出错。"
+}

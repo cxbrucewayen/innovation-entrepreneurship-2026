@@ -1,0 +1,74 @@
+﻿\documentclass{cxcyplan} % 不填充空白页。如果需要双面打印版，请注释掉本行并启用下一行
+% \documentclass[print-both-sides]{scutthesis} % 使用双面打印版（填充额外空白页以保证每一章开头都在奇数页）
+\usepackage{mathptmx}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+\DeclareCaptionListFormat{wzufiglist}{\figurename~#2}
+\DeclareCaptionListFormat{wzutablist}{\tablename~#2}
+\captionsetup[figure]{listformat=wzufiglist}
+\captionsetup[table]{listformat=wzutablist}
+\setlength{\headheight}{13pt}
+
+%\setmainfont{Times New Roman}[
+%  Path = ./fonts/,
+%  Extension = .ttf,
+%  UprightFont = times,
+%  BoldFont = timesbd,
+%  ItalicFont = timesi,
+%  BoldItalicFont = timesbi
+%]
+
+\setmainfont{Times New Roman}[
+UprightFont = *,
+BoldFont = * Bold,
+ItalicFont = * Italic,
+BoldItalicFont = * Bold Italic
+]
+
+%%===============论文信息=============================
+\ctitle{【请填写项目名称，力求简洁有力，朗朗上口】}
+\csubtitle{一句话描述：做什么的、解决了什么问题、做得怎么样（请替换为真实内容）}
+\cauthor{张三（负责人姓名）}
+\cphone{138XXXXXXXX}
+\csaidao{高教主赛道}
+\czubie{创意组}
+\cprovince{浙江省}
+\cschool{温州大学}
+\ccompany{（如已注册公司则填写全称，否则注释或删除此行）}
+\cdata{2026年3月}
+%%===================================================
+\cflypage{本项目聚焦于……（请在此处填写约200字的项目最核心精华内容介绍，重点突出项目的最大优势、核心技术和市场价值，这将显示在计划书扉页上）}
+
+\begin{document}
+% ===================== 前置部分 =====================
+\frontmatter
+\makefirstpage
+% 如果不需要图、表目录，前往 cls 文件中将相应命令注释掉
+
+% ===================== 正文主体部分 =====================
+\mainmatter
+
+% -------------------- 各章节独立文件 --------------------
+\input{chap01}   % 第一章 项目概述
+\input{chap02}   % 第二章 行业背景和市场分析
+\input{chap03}   % 第三章 产品与服务
+\input{chap04}   % 第四章 运营模式
+\input{chap05}   % 第五章 创业团队
+\input{chap06}   % 第六章 财务预测与融资计划
+\input{chap07}   % 第七章 风险分析
+\input{chap08}   % 第八章 发展规划与未来愿景
+\input{chap09}   % 第九章 附件
+
+% ===================== 参考文献（默认不编译，如需启用请删除 \iffalse/\fi）=====================
+\iffalse
+\backmatter
+\renewcommand{\chaptermark}[1]{\markboth{\songti #1}{}}
+\makereferences
+\newpage
+\fi
+
+\end{document}

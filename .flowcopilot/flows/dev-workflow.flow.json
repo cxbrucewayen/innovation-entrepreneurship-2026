@@ -1,0 +1,86 @@
+{
+  "$schema": "../../schemas/flow.schema.json",
+  "name": "二次开发流程",
+  "description": "全局扫描与基线确立 → 技术蓝图与原子化拆解 → 循环迭代与上下文维护",
+  "version": "1.0.0",
+  "defaultModel": "claude-opus-4.5",
+
+  "steps": [
+    {
+      "id": "design",
+      "name": "Phase 1 — 全局扫描与基线确立",
+      "type": "single",
+      "promptTemplate": "design.prompt.md",
+      "model": null,
+      "input": {
+        "source": "user",
+        "description": "用户的二次开发需求描述"
+      },
+      "output": {
+        "type": "file",
+        "path": "${context.outputDir}/design.md",
+        "description": "全栈扫描 + 差异分析设计文档"
+      }
+    },
+    {
+      "id": "plan",
+      "name": "Phase 2 — 技术蓝图与原子化拆解",
+      "type": "single",
+      "promptTemplate": "plan.prompt.md",
+      "model": null,
+      "input": {
+        "source": "previousStep",
+        "stepId": "design"
+      },
+      "output": {
+        "type": "json",
+        "path": ".flowcopilot/output/steps.json",
+        "schema": "steps-schema.json",
+        "description": "原子化子步骤列表（含验证命令与回滚策略）"
+      }
+    },
+    {
+      "id": "execute",
+      "name": "Phase 3 — 循环迭代与上下文维护",
+      "type": "loop",
+      "promptTemplate": "execute.prompt.md",
+      "model": "claude-opus-4.5",
+      "loop": {
+        "source": "previousStep",
+        "stepId": "plan",
+        "itemVariable": "currentStep",
+        "newChatPerItem": true
+      },
+      "output": {
+        "type": "json",
+        "path": ".flowcopilot/output/step_complete.json",
+        "description": "步骤完成标记 JSON 文件（每个子步骤在 runs 目录独立生成）"
+      }
+    }
+  ],
+
+  "context": {
+    "projectName": "${workspaceFolderBasename}",
+    "language": "TypeScript",
+    "framework": "React",
+    "targetFeature": "",
+    "targetDescription": "",
+    "outputDir": "docs",
+    "backendPaths": {
+      "controller": "src/**/controller",
+      "service": "src/**/service",
+      "dao": "src/**/dao|mapper|repository",
+      "entity": "src/**/entity|model|domain"
+    },
+    "frontendPaths": {
+      "views": "src/views|pages",
+      "components": "src/components",
+      "store": "src/store|stores",
+      "api": "src/api|services"
+    },
+    "testDataFile": "",
+    "typeCheckCommand": "pnpm type-check",
+    "dbType": "mysql",
+    "e2eFramework": "playwright"
+  }
+}

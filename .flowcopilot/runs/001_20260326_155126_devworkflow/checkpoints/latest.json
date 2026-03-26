@@ -1,0 +1,613 @@
+{
+  "flowId": "二次开发流程",
+  "flowFile": "g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\flows\\dev-workflow.flow.json",
+  "timestamp": "2026-03-26T11:03:16.587Z",
+  "completedSteps": [
+    "design",
+    "plan",
+    "execute"
+  ],
+  "currentStep": "execute",
+  "currentStepIndex": 3,
+  "lastOutput": [
+    "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_12_complete.json",
+    "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_13_complete.json",
+    "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_14_complete.json",
+    "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_15_complete.json",
+    "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_16_complete.json",
+    "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_17_complete.json",
+    "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_18_complete.json"
+  ],
+  "loopProgress": {
+    "total": 18,
+    "completed": 18,
+    "current": 18,
+    "items": [
+      {
+        "index": 1,
+        "status": "completed",
+        "title": "备份原始 wzuthesis.cls 文件"
+      },
+      {
+        "index": 2,
+        "status": "completed",
+        "title": "复制 wzuthesis.cls 为 cxcyplan.cls 并修改文档类声明"
+      },
+      {
+        "index": 3,
+        "status": "completed",
+        "title": "删除 cxcyplan.cls 中不需要的元信息宏定义"
+      },
+      {
+        "index": 4,
+        "status": "completed",
+        "title": "新增创新创业计划书专用元信息宏定义"
+      },
+      {
+        "index": 5,
+        "status": "completed",
+        "title": "重写封面生成函数 \\makeCover"
+      },
+      {
+        "index": 6,
+        "status": "completed",
+        "title": "新增扉页生成函数 \\makeFlyPage"
+      },
+      {
+        "index": 7,
+        "status": "completed",
+        "title": "修改 \\makefirstpage 调用链"
+      },
+      {
+        "index": 8,
+        "status": "completed",
+        "title": "删除 cxcyplan.cls 中不需要的功能模块代码"
+      },
+      {
+        "index": 9,
+        "status": "completed",
+        "title": "重构章节编号体系（中文数字格式，高风险）"
+      },
+      {
+        "index": 10,
+        "status": "completed",
+        "title": "修改页眉文字为创新创业计划书标题"
+      },
+      {
+        "index": 11,
+        "status": "completed",
+        "title": "调整全局行距为 1.5 倍"
+      },
+      {
+        "index": 12,
+        "status": "completed",
+        "title": "重写 main.tex 文档头部与元信息填写区",
+        "startTime": "2026-03-26T10:43:26.143Z",
+        "endTime": "2026-03-26T10:44:28.099Z",
+        "output": "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_12_complete.json"
+      },
+      {
+        "index": 13,
+        "status": "completed",
+        "title": "重写 main.tex 正文九章骨架结构",
+        "startTime": "2026-03-26T10:44:28.100Z",
+        "endTime": "2026-03-26T10:50:00.749Z",
+        "output": "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_13_complete.json"
+      },
+      {
+        "index": 14,
+        "status": "completed",
+        "title": "首次编译测试（XeLaTeX 单遍）",
+        "startTime": "2026-03-26T10:50:00.749Z",
+        "endTime": "2026-03-26T10:52:36.401Z",
+        "output": "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_14_complete.json"
+      },
+      {
+        "index": 15,
+        "status": "completed",
+        "title": "修复首次编译中出现的语法与逻辑错误",
+        "startTime": "2026-03-26T10:52:36.401Z",
+        "endTime": "2026-03-26T10:54:24.976Z",
+        "output": "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_15_complete.json"
+      },
+      {
+        "index": 16,
+        "status": "completed",
+        "title": "视觉检查 PDF 并微调封面与正文排版间距",
+        "startTime": "2026-03-26T10:54:24.976Z",
+        "endTime": "2026-03-26T10:59:34.943Z",
+        "output": "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_16_complete.json"
+      },
+      {
+        "index": 17,
+        "status": "completed",
+        "title": "清理 image/ 目录下的学术论文示例图片",
+        "startTime": "2026-03-26T10:59:34.943Z",
+        "endTime": "2026-03-26T11:01:33.743Z",
+        "output": "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_17_complete.json"
+      },
+      {
+        "index": 18,
+        "status": "completed",
+        "title": "最终完整编译验证（XeLaTeX 两遍，交付前验收）",
+        "startTime": "2026-03-26T11:01:33.743Z",
+        "endTime": "2026-03-26T11:03:16.569Z",
+        "output": "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_18_complete.json"
+      }
+    ]
+  },
+  "dataBusSnapshot": {
+    "outputs": {
+      "design": "# 温州大学硕士论文模板 → 中国国际大学生创新创业计划书模板 — 二次开发设计文档\r\n\r\n> 生成日期：2026-03-26  \r\n> 项目路径：`pdf/`  \r\n> 源模板：温州大学硕士学位论文 LaTeX 模板（`wzuthesis.cls` + `main.tex`）  \r\n> 目标模板：中国国际大学生创新创业计划书  \r\n> 目标结构参考：`template.md`\r\n\r\n---\r\n\r\n## 1. 项目基线概述\r\n\r\n### 1.1 项目架构总览\r\n\r\n本项目是一个基于 **XeLaTeX + ctexbook** 的中文学术文档排版系统，核心由两个文件组成：\r\n\r\n| 文件 | 角色 | 行数 | 说明 |\r\n|------|------|------|------|\r\n| `wzuthesis.cls` | 文档类定义 | ~800行 | 定义页面布局、字体、封面、摘要、目录、页眉页脚、章节格式等 |\r\n| `main.tex` | 主文档 | ~230行 | 使用文档类，填充论文内容（元信息、摘要、章节、致谢等） |\r\n| `main.bib` | 参考文献 | ~30行 | BibTeX 格式参考文献数据库 |\r\n| `template.md` | 目标参考 | ~200行 | 创新创业计划书结构说明（Markdown 格式） |\r\n\r\n### 1.2 字体体系\r\n\r\n| 用途 | 字体 | 来源 |\r\n|------|------|------|\r\n| 西文正文 | Times New Roman | 系统字体 |\r\n| 中文正文（宋体） | AdobeSongStd-Light.otf | `fonts/` 目录 |\r\n| 中文黑体 | AdobeHeitiStd-Regular.otf | `fonts/` 目录 |\r\n| 中文楷体 | AdobeKaitiStd-Regular.otf | `fonts/` 目录 |\r\n| 中文仿宋 | AdobeFangsongStd-Regular.otf | `fonts/` 目录 |\r\n| 封面校名 | 华文行楷.ttf | `fonts/` 目录 |\r\n| 等宽字体 | Consolas | 系统字体 |\r\n\r\n### 1.3 页面与版式设计\r\n\r\n- **纸张**：A4\r\n- **页边距**：上/下/左/右 = 2.5cm\r\n- **字号**：正文小四号（`zihao=-4`），约 12pt\r\n- **行距**：1.2 倍行距（`\\baselinestretch{1.2}`）\r\n- **页眉**：五号宋体，居中显示\"温州大学硕士学位论文\"，下划线分隔\r\n- **页脚**：五号字号页码居中\r\n- **章节编号**：阿拉伯数字（`1`，`1.1`，`1.1.1`）\r\n\r\n### 1.4 当前文档结构（main.tex）\r\n\r\n```\r\nfrontmatter\r\n  ├── 封面（自动生成）\r\n  │   ├── 分类号 / UDC / 学号 / 密级\r\n  │   ├── \"温州大学\" + \"硕士学位论文\" 标题\r\n  │   ├── 论文中文题目\r\n  │   ├── 作者姓名 / 培养类型 / 学位类型 / 专业名称 / 研究方向 / 指导教师 / 完成日期\r\n  │   └── \"温州大学学位委员会\"\r\n  ├── 独创性声明 + 授权声明\r\n  ├── 中文摘要 + 关键词\r\n  ├── 英文摘要 + 关键词\r\n  ├── 目录\r\n  ├── 图目录\r\n  └── 表目录\r\nmainmatter\r\n  ├── 第1章 引言\r\n  ├── 第2章 LaTeX 模板使用说明\r\n  ├── 第3章 参考文献说明\r\n  └── ...（正文章节）\r\nbackmatter\r\n  ├── 参考文献列表\r\n  ├── 附录\r\n  ├── 致谢\r\n  └── 攻读硕士学位期间取得的主要学术成果\r\n```\r\n\r\n### 1.5 cls 文件核心功能模块\r\n\r\n| 模块 | 功能 | 涉及命令/环境 |\r\n|------|------|---------------|\r\n| 元信息定义 | 定义论文元数据的宏 | `\\ctitle`, `\\etitle`, `\\cauthor`, `\\fen`, `\\udc`, `\\id`, `\\mi`, `\\xwlx`, `\\pylx`, `\\cmajor`, `\\cclass`, `\\cmentor`, `\\cdata`, `\\blindcode` |\r\n| 封面生成 | 正常封面 & 盲审封面 | `\\makeUndergraduateCover`, `\\makeblindpage` |\r\n| 声明页 | 独创性声明 + 授权声明 | `\\makedisclaim` |\r\n| 摘要 | 中英文摘要页 | `\\makecabstract`, `\\makeeabstract`, `\\makeabstract` |\r\n| 目录 | 正文目录 + 图表目录 | `\\maketableofcontents`, `\\makelistoffiguretable` |\r\n| 前置入口 | 按序调用封面→声明→摘要→目录 | `\\makefirstpage` |\r\n| 页眉页脚 | main / nohead 两种样式 | `fancyhdr` 配置 |\r\n| 正文格式 | 章/节/子节字号字体 | `\\mainmatter` 中 ctexset 配置 |\r\n| 后记格式 | 附录/致谢等格式 | `\\backmatter` 中 ctexset 配置 |\r\n| 参考文献 | GB/T 7714 格式 | `\\makereferences`, `gbt7714` 宏包 |\r\n| 附录 | 附录编号格式 | `\\appendix` |\r\n| 代码排版 | 代码高亮、代码块 | `minted` 宏包, `\\inputcode`, `\\code`, `codeblock` 环境 |\r\n| 自动引用 | 图/表/公式中文前缀 | `\\autoref` 配置 |\r\n\r\n### 1.6 资源文件\r\n\r\n| 路径 | 说明 |\r\n|------|------|\r\n| `fonts/` | 8个字体文件（4个 Adobe CJK + 4个 Times New Roman + 华文行楷） |\r\n| `image/` | 示例图片（figure.png, table.png, 作者信息.png, 标题使用.png） |\r\n| `image/chap04/` | 章节示例图片（1.jpg, 2.jpg 等） |\r\n| `title.png` | 温州大学校徽/LOGO（封面使用） |\r\n| `vscode.png` | VS Code 截图（文档说明用） |\r\n\r\n---\r\n\r\n## 2. 数据底座分析\r\n\r\n> 本项目为纯 LaTeX 排版项目，不涉及数据库。此处将 LaTeX 宏定义体系类比为\"数据层\"进行分析。\r\n\r\n### 2.1 \"元数据表\"结构（宏定义字段）\r\n\r\n#### 当前元数据字段（硕士论文）\r\n\r\n| 宏命令 | 存储字段 | 类型 | 当前用途 | 在目标中是否需要 |\r\n|--------|----------|------|----------|-----------------|\r\n| `\\ctitle{}` | 中文标题 | 文本 | 论文中文题目 | ✅ 改为项目名称 |\r\n| `\\etitle{}` | 英文标题 | 文本 | 论文英文题目 | ❌ 删除 |\r\n| `\\cauthor{}` | 作者姓名 | 文本 | 学位申请人 | ✅ 改为项目负责人姓名 |\r\n| `\\fen{}` | 分类号 | 文本 | 中图分类号 | ❌ 删除 |\r\n| `\\udc{}` | UDC号 | 文本 | 通用十进分类号 | ❌ 删除 |\r\n| `\\id{}` | 学号 | 文本 | 研究生学号 | ❌ 删除 |\r\n| `\\mi{}` | 密级 | 文本 | 论文密级 | ❌ 删除 |\r\n| `\\xwlx{}` | 学位类型 | 文本 | 学术型/专业型 | ❌ 删除 |\r\n| `\\pylx{}` | 培养类型 | 文本 | 全日制/非全日制 | ❌ 删除 |\r\n| `\\cmajor{}` | 专业名称 | 文本 | 学科专业 | ❌ 删除 |\r\n| `\\cclass{}` | 研究方向 | 文本 | 研究方向 | ❌ 删除 |\r\n| `\\cmentor{}` | 指导教师 | 文本 | 导师姓名 | ❌ 删除 |\r\n| `\\cdata{}` | 完成日期 | 文本 | 论文完成日期 | ✅ 保留 |\r\n| `\\blindcode{}` | 盲审代码 | 文本 | 盲审匿名码 | ❌ 删除 |\r\n| `\\cabstract{}` | 中文摘要 | 长文本 | 500-800字摘要 | ❌ 删除（改为扉页） |\r\n| `\\eabstract{}` | 英文摘要 | 长文本 | 英文摘要 | ❌ 删除 |\r\n| `\\ckeywords{}` | 中文关键词 | 文本 | 关键词列表 | ❌ 删除 |\r\n| `\\ekeywords{}` | 英文关键词 | 文本 | 英文关键词 | ❌ 删除 |\r\n\r\n#### 目标元数据字段（创新创业计划书）— 需新增\r\n\r\n| 宏命令（建议） | 存储字段 | 类型 | 用途 |\r\n|----------------|----------|------|------|\r\n| `\\ctitle{}` | 项目名称 | 文本 | 封面主标题（朗朗上口） |\r\n| `\\csubtitle{}` | 副标题 | 文本 | 一句话描述做什么的、做得怎么样 |\r\n| `\\cauthor{}` | 负责人姓名 | 文本 | 项目负责人 |\r\n| `\\cphone{}` | 联系电话 | 文本 | 负责人联系电话 |\r\n| `\\csaidao{}` | 所属赛道 | 文本 | 参赛赛道 |\r\n| `\\czubie{}` | 组别 | 文本 | 参赛组别 |\r\n| `\\cprovince{}` | 所在省份 | 文本 | 参赛省份 |\r\n| `\\cschool{}` | 所在学校 | 文本 | 参赛学校 |\r\n| `\\ccompany{}` | 公司名称 | 文本 | 已注册公司名（可选） |\r\n| `\\cdata{}` | 完成日期 | 文本 | 计划书完成日期 |\r\n\r\n### 2.2 \"关联关系\"分析\r\n\r\n```\r\nmain.tex ──uses──> wzuthesis.cls (文档类)\r\nmain.tex ──uses──> main.bib (参考文献)\r\nmain.tex ──uses──> image/* (图片资源)\r\nmain.tex ──uses──> fonts/* (字体文件，通过cls间接引用)\r\nwzuthesis.cls ──uses──> title.png (封面LOGO)\r\nwzuthesis.cls ──depends──> ctexbook (基础文档类)\r\nwzuthesis.cls ──depends──> fancyhdr, geometry, tocloft, natbib, gbt7714... (宏包)\r\n```\r\n\r\n### 2.3 \"枚举值/状态机\"\r\n\r\n- **盲审模式**：`\\def\\blind{}` — 启用后隐藏作者信息、致谢，使用盲审封面 → **目标中不需要**\r\n- **双面打印模式**：`print-both-sides` 选项 → **目标中可保留**\r\n\r\n---\r\n\r\n## 3. 差异分析矩阵\r\n\r\n### 3.1 文档结构层面\r\n\r\n| 序号 | 模块 | 当前（硕士论文） | 目标（创新创业计划书） | 状态 | 影响文件 | 工作量 |\r\n|------|------|-----------------|----------------------|------|----------|--------|\r\n| S-01 | 封面 | 学术论文封面（分类号/UDC/学号/密级 + 校名 + \"硕士学位论文\" + 元信息表） | 创业计划书封面（温大LOGO + 项目名称 + 副标题 + 赛道/组别/省份/学校/姓名/电话/公司名） | 🔴 需全新开发 | `wzuthesis.cls` (封面生成函数) | 高 |\r\n| S-02 | 扉页 | 无（直接进入声明页） | 项目最核心精华内容介绍页 | 🔴 需全新开发 | `wzuthesis.cls` (新增扉页命令), `main.tex` | 中 |\r\n| S-03 | 独创性声明 | 学位论文独创性声明 + 授权声明 | 不需要 | 🟡 需删除 | `wzuthesis.cls` (`\\makedisclaim`), `main.tex` | 低 |\r\n| S-04 | 中文摘要 | 500-800字学术摘要 + 关键词 | 不需要 | 🟡 需删除 | `wzuthesis.cls`, `main.tex` | 低 |\r\n| S-05 | 英文摘要 | 英文学术摘要 + 英文关键词 | 不需要 | 🟡 需删除 | `wzuthesis.cls`, `main.tex` | 低 |\r\n| S-06 | 目录 | 二级目录（图目录 + 表目录） | 二级目录（无图表目录） | 🟡 需修改扩展 | `wzuthesis.cls`, `main.tex` | 低 |\r\n| S-07 | 正文第一章 | 引言/绪论 | 一、项目概述（含项目背景/市场机遇/痛点/技术方案/营收/团队/股权融资） | 🔴 需全新开发 | `main.tex` | 中 |\r\n| S-08 | 正文第二章 | 模板使用说明 | 二、行业背景和市场分析（行业发展/销售额/政府影响/市场细分/目标市场/市场定位） | 🔴 需全新开发 | `main.tex` | 中 |\r\n| S-09 | 正文第三章 | 参考文献说明 | 三、产品与服务（技术概况/痛点/产品服务内容/竞品分析/应用案例） | 🔴 需全新开发 | `main.tex` | 中 |\r\n| S-10 | 正文第四章 | （无） | 四、运营模式（生产经营/营销推广） | 🔴 需全新开发 | `main.tex` | 中 |\r\n| S-11 | 正文第五章 | （无） | 五、创业团队（创业团队/创业导师团队） | 🔴 需全新开发 | `main.tex` | 中 |\r\n| S-12 | 正文第六章 | （无） | 六、财务预测与融资计划（财务分析/盈亏平衡） | 🔴 需全新开发 | `main.tex` | 中 |\r\n| S-13 | 正文第七章 | （无） | 七、风险分析 | 🔴 需全新开发 | `main.tex` | 低 |\r\n| S-14 | 正文第八章 | （无） | 八、发展规划与未来愿景 | 🔴 需全新开发 | `main.tex` | 低 |\r\n| S-15 | 正文第九章 | （无） | 九、附件（佐证、支撑材料） | 🔴 需全新开发 | `main.tex` | 低 |\r\n| S-16 | 参考文献 | GB/T 7714 格式参考文献列表 | 不在主体要求中，可选保留 | 🟡 需修改（改为可选） | `main.tex`, `main.bib` | 低 |\r\n| S-17 | 附录 | 学术附录 | 改为\"附件\"（专利证书/财务数据/合作协议/营业执照等） | 🟡 需修改扩展 | `wzuthesis.cls`, `main.tex` | 低 |\r\n| S-18 | 致谢 | 学术致谢 | 不需要 | 🟡 需删除 | `main.tex` | 低 |\r\n| S-19 | 学术成果 | 攻读学位期间学术成果 | 不需要 | 🟡 需删除 | `main.tex` | 低 |\r\n\r\n### 3.2 排版格式层面\r\n\r\n| 序号 | 模块 | 当前 | 目标 | 状态 | 影响文件 | 工作量 |\r\n|------|------|------|------|------|----------|--------|\r\n| F-01 | 页眉 | \"温州大学硕士学位论文\" | 可改为\"中国国际大学生创新创业计划书\"或项目名称 | 🟡 需修改扩展 | `wzuthesis.cls` (fancypagestyle) | 低 |\r\n| F-02 | 章节编号 | 阿拉伯数字（1, 1.1, 1.1.1） | 中文一级编号：\"一、二、三...\"；二级编号\"（一）（二）...\"；三级编号\"1. 2. 3.\" | 🔴 需全新开发 | `wzuthesis.cls` (ctexset chapter/section) | 高 |\r\n| F-03 | 页面布局 | A4, 2.5cm 四边 | 保持不变或微调 | 🟢 可直接复用 | `wzuthesis.cls` | 无 |\r\n| F-04 | 字体体系 | 宋体/黑体/楷体 + Times New Roman | 保持不变 | 🟢 可直接复用 | `wzuthesis.cls`, `fonts/` | 无 |\r\n| F-05 | 行距 | 1.2倍行距 | 计划书一般用1.5倍行距更佳 | 🟡 需修改扩展 | `wzuthesis.cls` | 低 |\r\n| F-06 | 表格样式 | 三线表 + 双语标注 | 单语标注（中文即可），样式保留 | 🟡 需修改扩展 | `main.tex` | 低 |\r\n| F-07 | 图片标注 | 双语标注 `\\bicaption` | 单语标注 `\\caption` | 🟡 需修改扩展 | `main.tex` | 低 |\r\n| F-08 | 总页数 | 学术论文无固定要求 | 约100页左右 | 🟢 无需改动 | — | 无 |\r\n\r\n### 3.3 功能特性层面\r\n\r\n| 序号 | 模块 | 当前 | 目标 | 状态 | 影响文件 | 工作量 |\r\n|------|------|------|------|------|----------|--------|\r\n| C-01 | 盲审模式 | 支持 `\\blind` 开关 | 不需要 | 🟡 需删除 | `wzuthesis.cls`, `main.tex` | 低 |\r\n| C-02 | 双语标注 | `bicaption` + `subcaption` | 不需要双语 | 🟡 需修改 | `main.tex`, `wzuthesis.cls` | 低 |\r\n| C-03 | 参考文献格式 | GB/T 7714 + natbib | 可选保留（计划书中引用不多） | 🟢 可直接复用 | `wzuthesis.cls` | 无 |\r\n| C-04 | 代码排版 | minted 宏包 | 不需要（计划书中几乎无代码） | 🟡 可删除减少依赖 | `wzuthesis.cls` | 低 |\r\n| C-05 | 图表目录 | 独立图目录 + 表目录 | 不需要 | 🟡 需删除 | `wzuthesis.cls`, `main.tex` | 低 |\r\n| C-06 | 交叉引用 | `\\autoref` 中文前缀 | 保留 | 🟢 可直接复用 | `wzuthesis.cls` | 无 |\r\n| C-07 | 封面LOGO | title.png（温大校徽） | 需要替换为温大LOGO或大赛统一LOGO | 🟡 需修改 | `title.png`, `wzuthesis.cls` | 低 |\r\n\r\n### 3.4 差异统计汇总\r\n\r\n| 状态 | 数量 | 占比 |\r\n|------|------|------|\r\n| 🟢 可直接复用 | 5 | 17% |\r\n| 🟡 需修改扩展 | 14 | 48% |\r\n| 🔴 需全新开发 | 10 | 35% |\r\n\r\n> **结论**：约 83% 的模块需要修改或重建，但底层排版引擎（字体、页面布局、宏包依赖）可大量复用。改造核心工作集中在：**封面重设计**、**章节编号体系重构**、**正文结构替换**。\r\n\r\n---\r\n\r\n## 4. 技术方案总述\r\n\r\n### 4.1 整体策略\r\n\r\n采用**就地改造**策略，在现有 `wzuthesis.cls` 基础上进行修改，重命名为 `cxcyplan.cls`（创新创业计划），保留可复用的排版基础设施，重写不适用的模块。\r\n\r\n### 4.2 改造路线图\r\n\r\n```\r\nPhase A: cls 文件改造（核心）\r\n  A1. 重命名 cls → cxcyplan.cls\r\n  A2. 重新定义元信息宏\r\n  A3. 重写封面生成函数\r\n  A4. 新增扉页生成函数\r\n  A5. 重构章节编号体系（一、二、三...）\r\n  A6. 修改页眉页脚\r\n  A7. 删除不需要的模块（盲审、声明、摘要等）\r\n  A8. 调整行距为 1.5 倍\r\n\r\nPhase B: main.tex 重写\r\n  B1. 更新 documentclass 引用\r\n  B2. 填写新的元信息\r\n  B3. 重写正文九章结构\r\n  B4. 添加模板提示文字（guide text）\r\n  B5. 清理不需要的宏包和设置\r\n\r\nPhase C: 资源更新\r\n  C1. 替换/更新封面 LOGO\r\n  C2. 清理示例图片\r\n  C3. 更新 .bib 文件（可选）\r\n```\r\n\r\n### 4.3 \"后端\"方案概述（cls 文件改造）\r\n\r\n> 在 LaTeX 项目中，`.cls` 文件扮演\"后端\"角色——它定义数据结构（宏）、业务逻辑（排版规则）、输出渲染（页面格式）。\r\n\r\n#### A2. 元信息宏重新定义\r\n\r\n**删除的宏**（共 12 个）：\r\n```latex\r\n\\etitle, \\fen, \\udc, \\id, \\mi, \\xwlx, \\pylx, \\cmajor, \\cclass, \\cmentor, \\blindcode\r\n\\cabstract, \\eabstract, \\ckeywords, \\ekeywords\r\n```\r\n\r\n**保留并修改的宏**（共 2 个）：\r\n```latex\r\n\\ctitle{}     % 语义改为\"项目名称\"\r\n\\cauthor{}    % 语义改为\"项目负责人\"\r\n\\cdata{}      % 语义改为\"完成日期\"\r\n```\r\n\r\n**新增的宏**（共 7 个）：\r\n```latex\r\n\\csubtitle{}   % 副标题\r\n\\cphone{}      % 联系电话\r\n\\csaidao{}     % 所属赛道\r\n\\czubie{}      % 组别\r\n\\cprovince{}   % 所在省份\r\n\\cschool{}     % 所在学校\r\n\\ccompany{}    % 公司名称（可选）\r\n```\r\n\r\n#### A3. 封面生成函数重写\r\n\r\n新封面设计规格：\r\n```\r\n┌─────────────────────────────────┐\r\n│         温州大学 LOGO            │  ← title.png（居中）\r\n│                                  │\r\n│   项目名称（大号黑体居中）        │  ← \\ctitle\r\n│   副标题（中号宋体居中）          │  ← \\csubtitle\r\n│                                  │\r\n│   所属赛道：XXXX    组别：XXXX   │  ← \\csaidao, \\czubie\r\n│   所在省份：XXXX                 │  ← \\cprovince\r\n│   所在学校：XXXX                 │  ← \\cschool\r\n│   姓    名：XXXX                 │  ← \\cauthor\r\n│   联系电话：XXXX                 │  ← \\cphone\r\n│   公司名称：XXXX（如已注册）     │  ← \\ccompany\r\n│                                  │\r\n│          完成日期                 │  ← \\cdata\r\n└─────────────────────────────────┘\r\n```\r\n\r\n封面函数伪代码：\r\n```latex\r\n\\newcommand\\makeCover{\r\n    \\begin{titlepage}\r\n        \\thispagestyle{empty}\r\n        \\begin{center}\r\n            % LOGO\r\n            \\includegraphics[width=0.3\\textwidth]{title.png}\r\n            \\vspace{1cm}\r\n            \r\n            % 项目名称\r\n            {\\heiti \\zihao{1} \\bfseries \\@ctitle}\r\n            \\vspace{0.5cm}\r\n            \r\n            % 副标题\r\n            {\\songti \\zihao{3} \\@csubtitle}\r\n            \\vspace{2cm}\r\n            \r\n            % 信息表\r\n            \\begin{tabular}{rl}\r\n                所属赛道： & \\@csaidao \\\\\r\n                组    别： & \\@czubie \\\\\r\n                所在省份： & \\@cprovince \\\\\r\n                所在学校： & \\@cschool \\\\\r\n                姓    名： & \\@cauthor \\\\\r\n                联系电话： & \\@cphone \\\\\r\n                公司名称： & \\@ccompany \\\\\r\n            \\end{tabular}\r\n            \r\n            \\vfill\r\n            {\\songti \\zihao{4} \\@cdata}\r\n        \\end{center}\r\n    \\end{titlepage}\r\n}\r\n```\r\n\r\n#### A4. 扉页生成函数（新增）\r\n\r\n```latex\r\n\\newcommand\\cflypage[1]{\\def\\@cflypage{#1}}  % 定义扉页内容宏\r\n\r\n\\newcommand\\makeFlyPage{\r\n    \\newpage\r\n    \\thispagestyle{empty}\r\n    \\vspace*{3cm}\r\n    \\begin{center}\r\n        {\\heiti \\zihao{3} \\bfseries 项目简介}\r\n    \\end{center}\r\n    \\vspace{1cm}\r\n    {\\songti \\zihao{4} \\linespread{1.8}\\selectfont\r\n        \\@cflypage\r\n    }\r\n    \\newpage\r\n}\r\n```\r\n\r\n#### A5. 章节编号体系重构\r\n\r\n核心改动：将 `chapter` 用中文数字编号，`section` 用带括号的中文数字，`subsection` 用阿拉伯数字加点。\r\n\r\n```latex\r\n\\renewcommand\\mainmatter{\r\n    \\@mainmattertrue\r\n    \\pagenumbering{arabic}\r\n    \\ctexset{\r\n        chapter = {\r\n            format = {\\centering\\zihao{3}\\heiti\\bfseries},\r\n            number = {\\chinese{chapter}},\r\n            name = {,、},\r\n            aftername = {},\r\n            beforeskip = {10pt},\r\n            afterskip = {20pt},\r\n        },\r\n        section = {\r\n            format = {\\zihao{4}\\heiti},\r\n            name = {（,）},\r\n            number = {\\chinese{section}},\r\n            aftername = {},\r\n        },\r\n        subsection = {\r\n            format = {\\zihao{4}\\heiti},\r\n            number = {\\arabic{subsection}},\r\n            aftername = {. },\r\n        },\r\n    }\r\n    \\zihao{-4}\\songti \\linespread{1.5}\\selectfont\r\n    \\mainpagestyle\r\n}\r\n```\r\n\r\n#### A6. 页眉页脚修改\r\n\r\n```latex\r\n\\fancypagestyle{main}{\r\n    \\fancyhf{}\r\n    \\fancyhead[c]{\\zihao{5}\\songti 中国国际大学生创新创业计划书}\r\n    \\fancyfoot[C]{\\zihao{5}\\thepage}\r\n    \\renewcommand{\\headrulewidth}{1pt}\r\n    \\renewcommand{\\footrulewidth}{0pt}\r\n}\r\n```\r\n\r\n#### A7. 删除不需要的模块\r\n\r\n需要从 `wzuthesis.cls` 中移除或注释的函数/命令：\r\n- `\\makedisclaim` — 独创性声明（整个函数体）\r\n- `\\makecabstract` — 中文摘要生成\r\n- `\\makeeabstract` — 英文摘要生成\r\n- `\\makeabstract` — 摘要入口\r\n- `\\makeblindpage` — 盲审封面\r\n- 盲审相关的条件判断 `\\ifdefined\\blind`\r\n- `bicaption` 相关配置\r\n\r\n#### A8. 行距调整\r\n\r\n```latex\r\n% 从 1.2 改为 1.5\r\n\\renewcommand{\\baselinestretch}{1.5}\r\n```\r\n\r\n### 4.4 \"前端\"方案概述（main.tex 重写）\r\n\r\n> 在 LaTeX 项目中，`main.tex` 扮演\"前端\"角色——负责内容组织、用户交互（模板填充引导）、可视化呈现。\r\n\r\n#### B1-B2. 文档头部\r\n\r\n```latex\r\n\\documentclass{cxcyplan}\r\n\r\n%%===============项目信息========================\r\n\\ctitle{项目名称（朗朗上口）}\r\n\\csubtitle{一句话描述做什么的，做得怎么样}\r\n\\cauthor{张三}\r\n\\cphone{138XXXXXXXX}\r\n\\csaidao{高教主赛道}\r\n\\czubie{创意组}\r\n\\cprovince{浙江省}\r\n\\cschool{温州大学}\r\n\\ccompany{XXX科技有限公司}\r\n\\cdata{2026年3月}\r\n%%===============================================\r\n\r\n%% 扉页内容\r\n\\cflypage{\r\n  本项目聚焦于...（项目最核心、最精华内容介绍，务必突出项目最大的优势）\r\n}\r\n```\r\n\r\n#### B3. 正文九章结构\r\n\r\n```latex\r\n\\begin{document}\r\n\\frontmatter\r\n\\makefirstpage  % 封面 + 扉页 + 目录\r\n\r\n\\mainmatter\r\n\\chapter{项目概述}\r\n\\section{项目背景}\r\n\\section{市场机遇与发展前景}\r\n\\section{项目痛点}\r\n\\section{产品技术解决方案、竞争优势}\r\n\\section{项目营收与社会影响}\r\n\\section{项目核心团队}\r\n\\section{项目股权与融资}\r\n\r\n\\chapter{行业背景和市场分析}\r\n\\section{该行业发展程度如何？现在发展动态如何？}\r\n\\section{该行业的总销售额有多少？总收入是多少？发展趋势怎样？}\r\n\\section{经济发展对该行业的影响程度如何？政府是如何影响该行业的？}\r\n\\section{市场细分}\r\n\\section{目标市场}\r\n\\section{市场定位}\r\n\r\n\\chapter{产品与服务}\r\n\\section{技术概况介绍}\r\n\\section{该领域存在的难点、痛点问题}\r\n\\section{产品或服务内容}\r\n\\section{竞品分析}\r\n\\section{应用案例}\r\n\r\n\\chapter{运营模式}\r\n\\section{生产经营}\r\n\\section{营销推广}\r\n\r\n\\chapter{创业团队}\r\n\\section{创业团队}\r\n\\section{创业导师团队}\r\n\r\n\\chapter{财务预测与融资计划}\r\n\\section{财务分析}\r\n\\section{完成研发所需投入与盈亏平衡}\r\n\r\n\\chapter{风险分析}\r\n（企业面临的风险及对策）\r\n\r\n\\chapter{发展规划与未来愿景}\r\n（三个维度 + 未来愿景）\r\n\r\n\\chapter{附件}\r\n\\section{书面授权许可书、专利证书}\r\n\\section{财务数据、已获投资情况}\r\n\\section{政府机构合作协议}\r\n\\section{已完成工商登记注册的相关材料}\r\n\r\n\\end{document}\r\n```\r\n\r\n### 4.5 数据变更方案\r\n\r\n| 变更类型 | 对象 | 说明 |\r\n|----------|------|------|\r\n| 重命名 | `wzuthesis.cls` → `cxcyplan.cls` | 文档类文件重命名 |\r\n| 重写 | `main.tex` | 全新正文结构 |\r\n| 替换 | `title.png` | 更新为适合计划书的 LOGO |\r\n| 清理 | `image/` 目录下示例图片 | 移除学术论文示例图 |\r\n| 可选删除 | `main.bib`, `main.bbl` | 计划书不要求参考文献（但可保留） |\r\n| 删除 | `main.aux`, `main.lof`, `main.lot`, `main.toc`, `main.log`, `main.out`, `main.synctex.gz` | 编译产物，重新编译即可生成 |\r\n\r\n---\r\n\r\n## 5. 接口设计\r\n\r\n> 在 LaTeX 项目中，\"接口\"对应用户在 `main.tex` 中可调用的宏命令和环境。以下列出新增/修改/删除的\"API\"。\r\n\r\n### 5.1 新增接口\r\n\r\n| 接口（宏命令） | 参数 | 说明 | 使用示例 |\r\n|----------------|------|------|----------|\r\n| `\\csubtitle{}` | 文本 | 设置项目副标题 | `\\csubtitle{全球首创XX技术}` |\r\n| `\\cphone{}` | 文本 | 设置联系电话 | `\\cphone{13800138000}` |\r\n| `\\csaidao{}` | 文本 | 设置所属赛道 | `\\csaidao{高教主赛道}` |\r\n| `\\czubie{}` | 文本 | 设置组别 | `\\czubie{创意组}` |\r\n| `\\cprovince{}` | 文本 | 设置所在省份 | `\\cprovince{浙江省}` |\r\n| `\\cschool{}` | 文本 | 设置所在学校 | `\\cschool{温州大学}` |\r\n| `\\ccompany{}` | 文本 | 设置公司名称 | `\\ccompany{XX科技有限公司}` |\r\n| `\\cflypage{}` | 长文本 | 设置扉页内容 | `\\cflypage{本项目聚焦于...}` |\r\n| `\\makeCover` | — | 生成封面页 | 在 `\\makefirstpage` 中自动调用 |\r\n| `\\makeFlyPage` | — | 生成扉页 | 在 `\\makefirstpage` 中自动调用 |\r\n\r\n### 5.2 修改接口\r\n\r\n| 接口 | 原始用途 | 新用途 | 变更说明 |\r\n|------|----------|--------|----------|\r\n| `\\ctitle{}` | 论文中文标题 | 项目名称 | 语义变更，无需改代码 |\r\n| `\\cauthor{}` | 论文作者 | 项目负责人 | 语义变更，无需改代码 |\r\n| `\\cdata{}` | 论文完成日期 | 计划书完成日期 | 语义变更，无需改代码 |\r\n| `\\makefirstpage` | 封面→声明→摘要→目录→图表目录 | 封面→扉页→目录 | 重写调用链 |\r\n\r\n### 5.3 删除接口\r\n\r\n| 接口 | 原用途 | 删除原因 |\r\n|------|--------|----------|\r\n| `\\etitle{}` | 英文标题 | 计划书无需英文 |\r\n| `\\fen{}` | 分类号 | 非学术文档 |\r\n| `\\udc{}` | UDC号 | 非学术文档 |\r\n| `\\id{}` | 学号 | 非学术文档 |\r\n| `\\mi{}` | 密级 | 非学术文档 |\r\n| `\\xwlx{}` | 学位类型 | 非学术文档 |\r\n| `\\pylx{}` | 培养类型 | 非学术文档 |\r\n| `\\cmajor{}` | 专业名称 | 非学术文档 |\r\n| `\\cclass{}` | 研究方向 | 非学术文档 |\r\n| `\\cmentor{}` | 指导教师 | 非学术文档 |\r\n| `\\blindcode{}` | 盲审代码 | 非学术文档 |\r\n| `\\cabstract{}` | 中文摘要 | 无摘要需求 |\r\n| `\\eabstract{}` | 英文摘要 | 无摘要需求 |\r\n| `\\ckeywords{}` | 中文关键词 | 无关键词需求 |\r\n| `\\ekeywords{}` | 英文关键词 | 无关键词需求 |\r\n| `\\makedisclaim` | 声明页 | 无声明需求 |\r\n| `\\makeabstract` | 摘要页 | 无摘要需求 |\r\n| `\\makeblindpage` | 盲审封面 | 无盲审需求 |\r\n| `\\makelistoffiguretable` | 图表目录 | 无图表目录需求 |\r\n| `\\overcite{}` | 上标引用 | 计划书很少引用（可选保留） |\r\n\r\n---\r\n\r\n## 6. 数据模型变更\r\n\r\n> 在 LaTeX 项目中，\"数据模型\"对应 `.cls` 文件中的宏定义、命令签名和排版参数。以下用\"DDL\"类比的方式记录变更。\r\n\r\n### 6.1 新增\"字段\"（宏定义）\r\n\r\n```latex\r\n% ====== 创新创业计划书元信息定义 ======\r\n\\newcommand\\csubtitle[1]{\\def\\@csubtitle{#1}}    % 项目副标题\r\n\\newcommand\\cphone[1]{\\def\\@cphone{#1}}           % 联系电话\r\n\\newcommand\\csaidao[1]{\\def\\@csaidao{#1}}         % 所属赛道\r\n\\newcommand\\czubie[1]{\\def\\@czubie{#1}}           % 组别\r\n\\newcommand\\cprovince[1]{\\def\\@cprovince{#1}}     % 所在省份\r\n\\newcommand\\cschool[1]{\\def\\@cschool{#1}}         % 所在学校 （注：原cls中已有此宏但未使用）\r\n\\newcommand\\ccompany[1]{\\def\\@ccompany{#1}}       % 公司名称\r\n\\newcommand\\cflypage[1]{\\def\\@cflypage{#1}}       % 扉页内容\r\n```\r\n\r\n### 6.2 删除\"字段\"\r\n\r\n```latex\r\n% 以下宏定义将从 cls 中移除\r\n% \\newcommand\\etitle[1]{\\def\\@etitle{#1}}\r\n% \\newcommand\\fen[1]{\\def\\@fen{#1}}\r\n% \\newcommand\\udc[1]{\\def\\@udc{#1}}\r\n% \\newcommand\\id[1]{\\def\\@id{#1}}\r\n% \\newcommand\\mi[1]{\\def\\@mi{#1}}\r\n% \\newcommand\\pylx[1]{\\def\\@pylx{#1}}\r\n% \\newcommand\\xwlx[1]{\\def\\@xwlx{#1}}\r\n% \\newcommand\\cmajor[1]{\\def\\@cmajor{#1}}\r\n% \\newcommand\\cclass[1]{\\def\\@cclass{#1}}\r\n% \\newcommand\\cmentor[1]{\\def\\@cmentor{#1}}\r\n% \\newcommand\\blindcode[1]{\\def\\@blindcode{#1}}\r\n% \\newcommand\\cabstract[1]{\\def\\@cabstract{#1}}\r\n% \\newcommand\\eabstract[1]{\\def\\@eabstract{#1}}\r\n% \\newcommand\\ckeywords[1]{\\def\\@ckeywords{#1}}\r\n% \\newcommand\\ekeywords[1]{\\def\\@ekeywords{#1}}\r\n```\r\n\r\n### 6.3 修改\"表结构\"（排版参数）\r\n\r\n| 参数 | 当前值 | 目标值 | 位置 |\r\n|------|--------|--------|------|\r\n| `\\baselinestretch` | 1.2 | 1.5 | cls 全局 |\r\n| chapter format number | `\\arabic{chapter}` | `\\chinese{chapter}` | `\\mainmatter` ctexset |\r\n| chapter name | `{}` | `{,、}` | `\\mainmatter` ctexset |\r\n| section name | `{}` | `{（,）}` | `\\mainmatter` ctexset |\r\n| section number | `\\thesection` | `\\chinese{section}` | `\\mainmatter` ctexset |\r\n| header text | \"温州大学硕士学位论文\" | \"中国国际大学生创新创业计划书\" | fancypagestyle main |\r\n\r\n---\r\n\r\n## 7. 前端交互设计\r\n\r\n### 7.1 页面结构总览\r\n\r\n```\r\n┌─────────────────────────────┐\r\n│          封面（1页）          │  ← \\makeCover 自动生成\r\n├─────────────────────────────┤\r\n│          扉页（1页）          │  ← \\makeFlyPage 自动生成\r\n├─────────────────────────────┤\r\n│         目录（1-2页）         │  ← \\maketableofcontents 自动生成\r\n├─────────────────────────────┤\r\n│     一、项目概述（~10页）     │\r\n│     二、行业背景（~15页）     │\r\n│     三、产品与服务（~20页）   │\r\n│     四、运营模式（~15页）     │\r\n│     五、创业团队（~8页）      │\r\n│     六、财务预测（~10页）     │\r\n│     七、风险分析（~5页）      │\r\n│     八、发展规划（~5页）      │\r\n│     九、附件（~10页）         │\r\n├─────────────────────────────┤\r\n│      （可选）参考文献         │\r\n└─────────────────────────────┘\r\n```\r\n\r\n### 7.2 用户填写流程\r\n\r\n1. **打开** `main.tex`\r\n2. **填写项目元信息**（封面区域的宏命令）\r\n3. **编写扉页** (`\\cflypage{...}`)\r\n4. **逐章填写正文**（每章已预设 `\\chapter` 和 `\\section` 骨架）\r\n5. **添加图片/表格**（与原模板操作一致，使用 `\\includegraphics`、`table` 环境等）\r\n6. **编译**（XeLaTeX → BibTeX → XeLaTeX × 2）\r\n7. **生成 PDF**\r\n\r\n### 7.3 组件复用映射\r\n\r\n| 原模板组件 | 新模板中用途 | 变更 |\r\n|-----------|-------------|------|\r\n| `\\chapter{}` | 九大章节容器 | 编号改为中文 |\r\n| `\\section{}` | 子章节容器 | 编号改为 `（一）（二）` |\r\n| `\\subsection{}` | 子子章节容器 | 编号改为 `1. 2. 3.` |\r\n| `figure` 环境 | 插入图片 | 去除双语标注 |\r\n| `table` 环境 | 插入表格 | 去除双语标注 |\r\n| `\\includegraphics` | 图片引用 | 无变化 |\r\n| `\\autoref{}` | 交叉引用 | 无变化 |\r\n| `enumerate` 环境 | 有序列表 | 无变化 |\r\n| `itemize` 环境 | 无序列表 | 无变化 |\r\n\r\n---\r\n\r\n## 8. 流程图\r\n\r\n### 8.1 模板改造工作流程\r\n\r\n```mermaid\r\nflowchart TD\r\n    A[开始改造] --> B[复制 wzuthesis.cls 为 cxcyplan.cls]\r\n    B --> C[修改元信息宏定义]\r\n    C --> D[重写封面函数 makeCover]\r\n    D --> E[新增扉页函数 makeFlyPage]\r\n    E --> F[修改 makefirstpage 调用链]\r\n    F --> G[重构章节编号体系 ctexset]\r\n    G --> H[修改页眉页脚]\r\n    H --> I[删除不需要的模块]\r\n    I --> J[调整行距等全局参数]\r\n    J --> K[重写 main.tex 正文结构]\r\n    K --> L[替换封面 LOGO]\r\n    L --> M[编译测试]\r\n    M --> N{编译通过?}\r\n    N -->|否| O[修复错误]\r\n    O --> M\r\n    N -->|是| P[视觉检查 PDF 输出]\r\n    P --> Q{符合预期?}\r\n    Q -->|否| R[调整排版参数]\r\n    R --> M\r\n    Q -->|是| S[完成]\r\n```\r\n\r\n### 8.2 用户使用流程\r\n\r\n```mermaid\r\nflowchart TD\r\n    U1[获取模板] --> U2[打开 main.tex]\r\n    U2 --> U3[填写项目元信息]\r\n    U3 --> U4[编写扉页简介]\r\n    U4 --> U5[逐章撰写正文]\r\n    U5 --> U6{需要插图/表格?}\r\n    U6 -->|是| U7[将图片放入 image/ 目录]\r\n    U7 --> U8[在文中用 figure/table 环境插入]\r\n    U8 --> U5\r\n    U6 -->|否| U9[编译 XeLaTeX]\r\n    U9 --> U10{编译成功?}\r\n    U10 -->|否| U11[检查 LaTeX 语法错误]\r\n    U11 --> U9\r\n    U10 -->|是| U12[查看 PDF 输出]\r\n    U12 --> U13{内容完整?}\r\n    U13 -->|否| U5\r\n    U13 -->|是| U14[提交计划书]\r\n```\r\n\r\n### 8.3 封面生成流程\r\n\r\n```mermaid\r\nflowchart LR\r\n    subgraph \"makefirstpage (新)\"\r\n        direction TB\r\n        F1[makeCover] --> F2[makeFlyPage]\r\n        F2 --> F3[maketableofcontents]\r\n    end\r\n\r\n    subgraph \"makefirstpage (旧)\"\r\n        direction TB\r\n        O1[makeUndergraduateCover] --> O2[makedisclaim]\r\n        O2 --> O3[makeabstract]\r\n        O3 --> O4[maketableofcontents]\r\n        O4 --> O5[makelistoffiguretable]\r\n    end\r\n```\r\n\r\n---\r\n\r\n## 9. 风险评估\r\n\r\n### 9.1 技术风险\r\n\r\n| 风险项 | 等级 | 说明 | 应对策略 |\r\n|--------|------|------|----------|\r\n| 章节编号中文化兼容性 | 🟡 中 | `ctexset` 中 `\\chinese{}` 计数器在嵌套环境中可能出现编号异常 | 充分测试多级嵌套场景；必要时手动定义计数器格式 |\r\n| 封面排版精度 | 🟡 中 | 纯 LaTeX 实现复杂封面排版较困难，间距需反复调试 | 使用 `textpos` 宏包（cls 已加载）进行绝对定位；预留调试时间 |\r\n| 字体缺失 | 🟢 低 | 华文行楷在部分系统上可能不可用 | 已在 `fonts/` 目录提供字体文件，使用 `Path` 参数指定本地路径 |\r\n| XeLaTeX 编译兼容 | 🟢 低 | 依赖 XeLaTeX 编译器，pdfLaTeX 不兼容 | 在文档中明确标注编译器要求 |\r\n\r\n### 9.2 兼容性风险\r\n\r\n| 风险项 | 等级 | 说明 | 应对策略 |\r\n|--------|------|------|----------|\r\n| 宏包冲突 | 🟢 低 | 删除的模块（minted 等）可能有残余依赖 | 逐步删除并验证编译 |\r\n| 目录格式 | 🟡 中 | 章节编号改为中文后，目录中的格式需要同步调整 | 同步修改 `tocloft` 相关配置 |\r\n| 交叉引用前缀 | 🟢 低 | `\\autoref` 中的 `\\chapterautorefname` 等需适配 | 保持中文前缀配置不变或微调 |\r\n\r\n### 9.3 数据迁移风险\r\n\r\n| 风险项 | 等级 | 说明 | 应对策略 |\r\n|--------|------|------|----------|\r\n| 已有内容丢失 | 🟢 低 | 原 main.tex 中的示例内容在重写过程中被覆盖 | 重写前保留原始文件备份 |\r\n| 图片资源混乱 | 🟢 低 | image/ 目录中的学术论文示例图与新模板无关 | 保留目录结构，清理示例文件，添加 placeholder |\r\n\r\n### 9.4 项目管理风险\r\n\r\n| 风险项 | 等级 | 说明 | 应对策略 |\r\n|--------|------|------|----------|\r\n| 需求理解偏差 | 🟡 中 | template.md 中的结构描述为建议性文字，具体排版规范未完全明确 | 以 template.md 为主要参考，排版细节参考大赛往年优秀计划书 |\r\n| 排版微调周期长 | 🟡 中 | LaTeX 排版细节调整需要反复编译预览 | 按模块分步实施，每步编译验证 |\r\n\r\n### 9.5 风险汇总矩阵\r\n\r\n```\r\n        低影响    中影响    高影响\r\n高概率              F-02\r\n中概率   9.3     9.1/9.2\r\n低概率   9.4       9.1\r\n```\r\n\r\n> **总体风险评估**：项目改造风险整体可控。最大风险来自章节编号体系重构（F-02），需重点测试。建议按 Phase A → B → C 顺序分步实施，每步编译验证。\r\n\r\n---\r\n\r\n## 附录：文件变更清单\r\n\r\n| 文件 | 操作 | 说明 |\r\n|------|------|------|\r\n| `wzuthesis.cls` | 复制并重命名 → `cxcyplan.cls` | 在副本上进行改造，保留原始文件 |\r\n| `cxcyplan.cls` | 大幅修改 | 新元信息宏、新封面、新扉页、新编号体系、新页眉、删除旧模块 |\r\n| `main.tex` | 完全重写 | 新的九章正文结构 + 元信息 + 扉页 |\r\n| `title.png` | 替换 | 更新封面 LOGO |\r\n| `image/` | 清理 | 移除学术示例图片 |\r\n| `main.bib` | 可选保留 | 按需使用参考文献 |\r\n| `template.md` | 保留 | 作为参考文档 |\r\n| `fonts/` | 保留 | 字体文件完整保留 |\r\n",
+      "plan": {
+        "generatedAt": "2026-03-26T16:00:00+08:00",
+        "designDocRef": ".flowcopilot/runs/001_20260326_155126_devworkflow/design_20260326_155126.md",
+        "totalSteps": 18,
+        "milestones": [
+          {
+            "afterStep": 11,
+            "description": "cls 文件基础改造完成：元信息宏、封面函数、扉页函数、章节编号、页眉页脚、行距均已完成修改",
+            "verifyCommand": "Select-String -Path cxcyplan.cls -Pattern 'makeCover|makeFlyPage|chinese.*chapter' | Measure-Object -Line"
+          },
+          {
+            "afterStep": 13,
+            "description": "main.tex 重写完成，模板九章骨架就绪，可进行首次编译测试",
+            "verifyCommand": "Select-String -Path main.tex -Pattern 'cxcyplan|chapter.*项目概述|chapter.*行业背景' | Measure-Object -Line"
+          },
+          {
+            "afterStep": 16,
+            "description": "封面、扉页、目录排版符合预期，编译无错误，PDF 外观通过视觉验收",
+            "verifyCommand": "Test-Path main.pdf"
+          },
+          {
+            "afterStep": 18,
+            "description": "模板改造全部完成，最终 PDF 输出符合中国国际大学生创新创业计划书规范，可交付使用",
+            "verifyCommand": "xelatex -interaction=nonstopmode main.tex; if ($LASTEXITCODE -eq 0) { Write-Host 'BUILD SUCCESSFUL' } else { Write-Host 'BUILD FAILED' }"
+          }
+        ],
+        "steps": [
+          {
+            "id": 1,
+            "title": "备份原始 wzuthesis.cls 文件",
+            "description": "在开始任何改造之前，先将 wzuthesis.cls 复制一份保存为 wzuthesis.cls.bak，作为恢复基准。此步骤纯粹是安全保障措施，不修改任何代码逻辑。操作：在工作目录（pdf/）执行文件复制命令：Copy-Item wzuthesis.cls wzuthesis.cls.bak。预期结果：wzuthesis.cls.bak 创建成功，内容与 wzuthesis.cls 完全一致。",
+            "category": "config",
+            "files": [
+              "wzuthesis.cls",
+              "wzuthesis.cls.bak"
+            ],
+            "dependencies": [],
+            "verification": {
+              "type": "manual",
+              "command": "Test-Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\wzuthesis.cls.bak'",
+              "expected": "输出 True，确认备份文件存在"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "此步骤仅创建备份文件，删除 wzuthesis.cls.bak 即可回滚（Remove-Item wzuthesis.cls.bak），不影响任何功能"
+            },
+            "risk": "low",
+            "estimatedMinutes": 1
+          },
+          {
+            "id": 2,
+            "title": "复制 wzuthesis.cls 为 cxcyplan.cls 并修改文档类声明",
+            "description": "将 wzuthesis.cls 复制为 cxcyplan.cls（在副本上进行所有后续改造，原始文件不受影响）。操作：Copy-Item wzuthesis.cls cxcyplan.cls。然后在 cxcyplan.cls 文件顶部找到 \\ProvidesClass{wzuthesis} 这一行（通常位于第 1-5 行），将其修改为 \\ProvidesClass{cxcyplan}[2026/03/26 v1.0 中国国际大学生创新创业计划书文档类]。同时更新顶部注释，说明该文件是由 wzuthesis.cls 改造而来。这是所有后续 cls 改造步骤的前提，必须最先完成。",
+            "category": "config",
+            "files": [
+              "wzuthesis.cls",
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              1
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'ProvidesClass\\{cxcyplan\\}'",
+              "expected": "输出匹配行，确认文档类名已改为 cxcyplan"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "Remove-Item cxcyplan.cls 删除新建的 cls 文件即可回滚，不影响原始 wzuthesis.cls"
+            },
+            "risk": "low",
+            "estimatedMinutes": 5
+          },
+          {
+            "id": 3,
+            "title": "删除 cxcyplan.cls 中不需要的元信息宏定义",
+            "description": "在 cxcyplan.cls 中，找到元信息宏定义区域（\\newcommand 系列，通常集中在 cls 文件的前 100-200 行），删除或注释掉以下 15 个不再需要的宏定义及其对应的 \\def\\@xxx{} 默认值行：\\etitle（英文标题）、\\fen（分类号）、\\udc（UDC号）、\\id（学号）、\\mi（密级）、\\pylx（培养类型）、\\xwlx（学位类型）、\\cmajor（专业名称）、\\cclass（研究方向）、\\cmentor（指导教师）、\\blindcode（盲审代码）、\\cabstract（中文摘要）、\\eabstract（英文摘要）、\\ckeywords（中文关键词）、\\ekeywords（英文关键词）。保留 \\ctitle、\\cauthor、\\cdata 这三个宏（语义改变但代码不变）。注意：同步检查这些宏在封面生成函数等地方是否有 \\@etitle、\\@fen 等引用，一并删除相关引用代码（此时封面函数可暂时留空或注释，步骤5会完整重写）。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              2
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'newcommand.{0,5}etitle|newcommand.{0,5}\\bfen\\b|newcommand.{0,5}blindcode|newcommand.{0,5}cabstract' | Where-Object { $_ -notmatch '^\\s*%' }",
+              "expected": "无输出（所有匹配行均为注释行或已删除），确认不需要的宏定义已清除"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "将注释的行取消注释（如果采用注释方式），或从 wzuthesis.cls.bak 复制对应宏定义粘贴回来"
+            },
+            "risk": "medium",
+            "estimatedMinutes": 15
+          },
+          {
+            "id": 4,
+            "title": "新增创新创业计划书专用元信息宏定义",
+            "description": "在 cxcyplan.cls 的元信息宏定义区（紧跟 \\ctitle、\\cauthor、\\cdata 定义之后），新增以下 8 个宏命令及默认值：① \\newcommand\\csubtitle[1]{\\def\\@csubtitle{#1}} 和 \\def\\@csubtitle{}（项目副标题）；② \\newcommand\\cphone[1]{\\def\\@cphone{#1}} 和 \\def\\@cphone{}（联系电话）；③ \\newcommand\\csaidao[1]{\\def\\@csaidao{#1}} 和 \\def\\@csaidao{}（所属赛道）；④ \\newcommand\\czubie[1]{\\def\\@czubie{#1}} 和 \\def\\@czubie{}（组别）；⑤ \\newcommand\\cprovince[1]{\\def\\@cprovince{#1}} 和 \\def\\@cprovince{}（所在省份）；⑥ \\newcommand\\cschool[1]{\\def\\@cschool{#1}} 和 \\def\\@cschool{}（所在学校，若原 cls 已有则跳过 newcommand，仅确认定义存在）；⑦ \\newcommand\\ccompany[1]{\\def\\@ccompany{#1}} 和 \\def\\@ccompany{}（公司名称，默认为空，封面中条件显示）；⑧ \\newcommand\\cflypage[1]{\\def\\@cflypage{#1}} 和 \\def\\@cflypage{请在此填写项目核心简介}（扉页内容长文本，设置提示性默认值）。每个宏的默认值确保 main.tex 中漏填时不会导致编译出错。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              3
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'newcommand.{0,3}csubtitle|newcommand.{0,3}cphone|newcommand.{0,3}csaidao|newcommand.{0,3}czubie|newcommand.{0,3}ccompany|newcommand.{0,3}cflypage' | Measure-Object -Line",
+              "expected": "LineCount 为 6 或更多，确认全部新宏已添加"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "手动删除新增的 8 对 \\newcommand + \\def 行，或 git checkout cxcyplan.cls 回到步骤3完成后的状态"
+            },
+            "risk": "low",
+            "estimatedMinutes": 15
+          },
+          {
+            "id": 5,
+            "title": "重写封面生成函数 \\makeCover",
+            "description": "在 cxcyplan.cls 中，找到原来的 \\makeUndergraduateCover 函数（或类似名称的封面函数），将其整体替换为新的 \\makeCover 命令。新封面的完整实现：① 使用 titlepage 环境，\\thispagestyle{empty}；② \\begin{center} 块内，首先用 \\includegraphics[width=0.3\\textwidth]{title.png} 显示 LOGO，后跟 \\vspace{1cm}；③ {\\heiti \\zihao{1} \\bfseries \\@ctitle} 显示项目名称（一号黑体加粗），后跟 \\vspace{0.5cm}；④ {\\songti \\zihao{3} \\@csubtitle} 显示副标题，后跟 \\vspace{2cm}；⑤ 信息表使用 tabular{rl} 环境，依次列出：所属赛道/组别/所在省份/所在学校/姓名/联系电话，每行格式为 {标签：& \\@宏名 \\\\}，标签统一右对齐；⑥ 公司名称行使用条件判断：\\ifx\\@ccompany\\empty \\else 公司名称：& \\@ccompany \\\\ \\fi；⑦ \\end{tabular} 后跟 \\end{center}、\\vfill；⑧ \\begin{center}{\\songti \\zihao{4} \\@cdata}\\end{center} 底部显示日期；⑨ \\end{titlepage}。若原 \\makeUndergraduateCover 函数名被 \\makefirstpage 引用，同时更新引用（步骤7会统一处理）。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              4
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'newcommand.*makeCover|renewcommand.*makeCover'",
+              "expected": "输出包含 makeCover 的定义行，确认封面函数已创建"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "删除 \\makeCover 函数体，从 wzuthesis.cls.bak 中复制 \\makeUndergraduateCover 原始实现粘贴回来"
+            },
+            "risk": "medium",
+            "estimatedMinutes": 40
+          },
+          {
+            "id": 6,
+            "title": "新增扉页生成函数 \\makeFlyPage",
+            "description": "在 cxcyplan.cls 的 \\makeCover 函数定义之后，新增 \\makeFlyPage 命令（完全新增，不替换现有函数）。完整实现：\\newcommand\\makeFlyPage{ \\newpage \\thispagestyle{empty} \\vspace*{3cm} \\begin{center} {\\heiti \\zihao{3} \\bfseries 项目简介} \\end{center} \\vspace{1cm} {\\songti \\zihao{4} \\linespread{1.8}\\selectfont \\@cflypage} \\newpage }。注意事项：① \\vspace*{3cm} 使用带星号版本，确保在页面开始处也生效；② \\thispagestyle{empty} 确保扉页无页眉页脚、无页码；③ \\linespread{1.8}\\selectfont 必须在文字前调用才能生效；④ 末尾的 \\newpage 确保目录从新页开始。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              5
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'newcommand.*makeFlyPage'",
+              "expected": "输出 \\makeFlyPage 定义行，确认扉页函数已创建"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "删除 \\makeFlyPage 函数体即可（此步骤为纯新增，不修改任何现有代码）"
+            },
+            "risk": "low",
+            "estimatedMinutes": 15
+          },
+          {
+            "id": 7,
+            "title": "修改 \\makefirstpage 调用链",
+            "description": "在 cxcyplan.cls 中找到 \\makefirstpage 命令的定义（该命令是 main.tex 中 \\frontmatter 后调用的入口），将其内部调用顺序从旧链重写为新链。旧链：\\makeUndergraduateCover → \\makedisclaim → \\makeabstract → \\maketableofcontents → \\makelistoffiguretable。新链：\\makeCover → \\makeFlyPage → \\maketableofcontents。具体修改：① 将 \\makeUndergraduateCover 替换为 \\makeCover；② 删除 \\makedisclaim 调用行；③ 删除 \\makeabstract（或 \\makecabstract + \\makeeabstract）调用行；④ 在 \\makeCover 和 \\maketableofcontents 之间插入 \\makeFlyPage 调用；⑤ 删除 \\makelistoffiguretable 调用行；⑥ 保留 \\maketableofcontents 调用（目录仍需要）。最终 \\makefirstpage 函数体应只有三行有效调用。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              6
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'makedisclaim|makeabstract|makelistoffiguretable' | Where-Object { $_ -notmatch '^\\s*%' }",
+              "expected": "无未注释行输出，确认旧调用已删除；再用 Select-String -Pattern 'makeCover|makeFlyPage|maketableofcontents' 确认新三行存在"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "从 wzuthesis.cls.bak 中复制 \\makefirstpage 的原始实现粘贴回 cxcyplan.cls"
+            },
+            "risk": "medium",
+            "estimatedMinutes": 10
+          },
+          {
+            "id": 8,
+            "title": "删除 cxcyplan.cls 中不需要的功能模块代码",
+            "description": "在 cxcyplan.cls 中，删除以下功能模块的完整实现代码（建议保留单行注释说明「已移除」以便追溯）：① \\makedisclaim 函数体（独创性声明+授权声明，约 40-60 行代码）；② \\makecabstract 函数体（中文摘要页生成）；③ \\makeeabstract 函数体（英文摘要页生成）；④ \\makeabstract 函数体（摘要入口，内部调用上面两个）；⑤ \\makeblindpage 函数体（盲审封面）；⑥ 所有涉及盲审的条件判断代码块（\\ifdefined\\blind 或相关逻辑）；⑦ bicaption 宏包加载行（\\usepackage{bicaption} 或 \\usepackage[...]{bicaption}）及其后的双语标注全局配置语句；⑧ minted 宏包加载（\\usepackage{minted}）及相关的 \\inputcode、\\code 命令定义、codeblock 环境定义；⑨ \\makelistoffiguretable 函数体（图表目录生成）。每处删除后记录注释，便于后续追溯。注意：只删除这些模块的实现代码，不影响其他模块。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              7
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'usepackage.*minted|usepackage.*bicaption|newcommand.*makedisclaim|newcommand.*makeblindpage' | Where-Object { $_ -notmatch '^\\s*%' }",
+              "expected": "无未注释行输出，确认不需要的模块已清除"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "从 wzuthesis.cls.bak 中复制对应函数体，粘贴回 cxcyplan.cls 的对应位置"
+            },
+            "risk": "medium",
+            "estimatedMinutes": 25
+          },
+          {
+            "id": 9,
+            "title": "重构章节编号体系（中文数字格式，高风险）",
+            "description": "在 cxcyplan.cls 的 \\mainmatter 命令中，修改 \\ctexset 配置，将章节编号体系改为中文格式。核心 ctexset 修改内容：【chapter】number=\\chinese{chapter}，name={,、}，aftername={}，format=\\centering\\zihao{3}\\heiti\\bfseries，beforeskip=10pt，afterskip=20pt（最终显示效果：「一、项目概述」，居中三号黑体加粗）；【section】number=\\chinese{section}，name={（,）}，aftername={}，format=\\zihao{4}\\heiti（最终显示效果：「（一）项目背景」，左对齐四号黑体）；【subsection】number=\\arabic{subsection}，aftername={. }，format=\\zihao{4}\\heiti（最终显示效果：「1. 具体内容」，左对齐四号黑体）。同步处理目录格式：检查 tocloft 配置中的 \\l@chapter 等命令，确保目录中的章节缩进和编号与正文格式一致。此步骤风险最高，需要在步骤14中重点测试多级嵌套编号场景，特别是三级以上编号的情况。若 \\chinese 计数器出现问题，备用方案是使用 \\\\CTEXnumber 或手动定义中文计数器。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              7
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'chinese.*\\{chapter\\}|chinese.*\\{section\\}|arabic.*\\{subsection\\}'",
+              "expected": "输出至少 2-3 行匹配，确认中文编号配置已写入 ctexset"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "从 wzuthesis.cls.bak 复制原来的 ctexset chapter/section/subsection 配置块，粘贴回 cxcyplan.cls 的 \\mainmatter 中，恢复为阿拉伯数字编号"
+            },
+            "risk": "high",
+            "estimatedMinutes": 30
+          },
+          {
+            "id": 10,
+            "title": "修改页眉文字为创新创业计划书标题",
+            "description": "在 cxcyplan.cls 中，找到 fancypagestyle{main} 的配置块（通常在 cls 的页眉页脚设置区域），将 \\fancyhead[C]{...} 中的文字从「温州大学硕士学位论文」修改为「中国国际大学生创新创业计划书」。字体样式保持不变：五号宋体居中（{\\zihao{5}\\songti 中国国际大学生创新创业计划书}）。同时全文搜索是否有其他 fancyhf 或 pagestyle 配置中包含旧文字，一并修改。headrulewidth（1pt）和 footrulewidth（0pt）保持不变。页脚页码格式不变。完成后，整个模板的页眉将统一显示新标题。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              8
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern '温州大学硕士学位论文' | Where-Object { $_ -notmatch '^\\s*%' }",
+              "expected": "无未注释行输出，确认旧页眉文字已全部替换；再用 Select-String -Pattern '创新创业计划书' 确认新文字存在"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "将 \\fancyhead[C]{中国国际大学生创新创业计划书} 改回 \\fancyhead[C]{温州大学硕士学位论文} 即可"
+            },
+            "risk": "low",
+            "estimatedMinutes": 10
+          },
+          {
+            "id": 11,
+            "title": "调整全局行距为 1.5 倍",
+            "description": "在 cxcyplan.cls 中进行以下行距参数调整：① 找到全局设置区域的 \\renewcommand{\\baselinestretch}{1.2}（或类似的全局行距设置），将 1.2 改为 1.5；② 在 \\mainmatter 命令末尾找到 \\linespread{1.2}\\selectfont，将其改为 \\linespread{1.5}\\selectfont，确保正文进入时行距生效；③ 检查是否有局部覆盖了行距的代码（如摘要环境等），已删除的模块不影响，保留的模块（如目录）可维持默认。此改动会使正文行距从 1.2 倍扩大到 1.5 倍，是计划书更常用的行距规范，提升阅读舒适度。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              8
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\cxcyplan.cls' -Pattern 'baselinestretch.*1\\.2|linespread.*1\\.2' | Where-Object { $_ -notmatch '^\\s*%' }",
+              "expected": "无未注释行输出，确认所有 1.2 行距已改为 1.5"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "将 baselinestretch 和 linespread 的值从 1.5 改回 1.2（两处修改，逐一恢复）"
+            },
+            "risk": "low",
+            "estimatedMinutes": 5
+          },
+          {
+            "id": 12,
+            "title": "重写 main.tex 文档头部与元信息填写区",
+            "description": "将 main.tex 的文档头部进行以下修改：① 将 \\documentclass{wzuthesis}（或带选项的版本）改为 \\documentclass{cxcyplan}，移除 wzuthesis 专属选项（如 blind 等）；② 删除所有旧的元信息宏调用：\\etitle、\\fen、\\udc、\\id、\\mi、\\xwlx、\\pylx、\\cmajor、\\cclass、\\cmentor、\\blindcode、\\cabstract、\\eabstract、\\ckeywords、\\ekeywords；③ 保留并更新：\\ctitle{【请填写项目名称，力求简洁有力，朗朗上口】}、\\cauthor{张三（负责人姓名）}、\\cdata{2026年3月}；④ 新增并填写引导性样例值：\\csubtitle{一句话描述：做什么的、解决了什么问题、做得怎么样（请替换为真实内容）}、\\cphone{138XXXXXXXX}、\\csaidao{高教主赛道}、\\czubie{创意组}、\\cprovince{浙江省}、\\cschool{温州大学}、\\ccompany{（如已注册公司则填写全称，否则注释或删除此行）}；⑤ 在元信息区之后添加：\\cflypage{本项目聚焦于……（请在此处填写约200字的项目最核心精华内容介绍，重点突出项目的最大优势、核心技术和市场价值，这将显示在计划书扉页上）}；⑥ 删除 minted、bicaption 等在 cxcyplan.cls 中已删除的宏包的残余 \\usepackage 调用；⑦ 保留 graphicx、booktabs、amsmath 等通用宏包加载。",
+            "category": "frontend",
+            "files": [
+              "main.tex"
+            ],
+            "dependencies": [
+              2
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\main.tex' -Pattern 'documentclass.*cxcyplan|csubtitle|csaidao|cflypage'",
+              "expected": "输出至少 3 行，确认新文档类声明和新元信息宏已写入 main.tex"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "git checkout main.tex 恢复原始 main.tex（需要在步骤1前已 git commit，或手动恢复 \\documentclass{wzuthesis} 和旧的元信息宏）"
+            },
+            "risk": "medium",
+            "estimatedMinutes": 20
+          },
+          {
+            "id": 13,
+            "title": "重写 main.tex 正文九章骨架结构",
+            "description": "将 main.tex 的 \\begin{document}...\\end{document} 正文部分完全重写为创新创业计划书的九章结构。保留 \\frontmatter、\\makefirstpage、\\mainmatter 这三个骨架命令。按以下顺序逐一写出九章，每章 \\chapter{} 下包含对应的 \\section{}，每个 section 下方加 % TODO 注释引导用户填写：【第一章】\\chapter{项目概述}，sections：项目背景/市场机遇与发展前景/项目痛点/产品技术解决方案与竞争优势/项目营收与社会影响/项目核心团队/项目股权与融资；【第二章】\\chapter{行业背景和市场分析}，sections：该行业发展程度与现状动态/行业总销售额与发展趋势/经济与政府对该行业的影响/市场细分/目标市场/市场定位；【第三章】\\chapter{产品与服务}，sections：技术概况介绍/该领域存在的难点与痛点/产品或服务内容/竞品分析/应用案例；【第四章】\\chapter{运营模式}，sections：生产经营/营销推广；【第五章】\\chapter{创业团队}，sections：创业团队/创业导师团队；【第六章】\\chapter{财务预测与融资计划}，sections：财务分析/完成研发所需投入与盈亏平衡；【第七章】\\chapter{风险分析}（仅正文段落，无子节，加 % TODO 注释）；【第八章】\\chapter{发展规划与未来愿景}（仅正文段落，无子节）；【第九章】\\chapter{附件}，sections：书面授权许可书与专利证书/财务数据与已获投资情况/政府机构合作协议/工商登记注册相关材料。删除原有的学术论文章节（引言/模板使用说明/参考文献说明）及致谢、学术成果章节。原参考文献调用用 \\iffalse...\\fi 包裹（默认不编译，有需要时可打开）。",
+            "category": "frontend",
+            "files": [
+              "main.tex"
+            ],
+            "dependencies": [
+              12
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Select-String -Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\main.tex' -Pattern '^\\\\chapter' | Measure-Object -Line",
+              "expected": "LineCount 为 9，确认九个章节标题均已写入（每章恰好一个 \\chapter 命令）"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "git checkout main.tex 恢复到步骤12完成后的状态（元信息正确，但正文为旧内容）"
+            },
+            "risk": "medium",
+            "estimatedMinutes": 30
+          },
+          {
+            "id": 14,
+            "title": "首次编译测试（XeLaTeX 单遍）",
+            "description": "在工作目录（g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf）执行首次 XeLaTeX 编译，验证 cxcyplan.cls 和重写后的 main.tex 无 fatal 编译错误，能生成 PDF。操作步骤：① 打开 PowerShell，cd 到 pdf/ 目录；② 执行 xelatex -interaction=nonstopmode main.tex；③ 检查退出码（0 = 成功，非零 = 有错误）；④ 打开生成的 main.pdf，快速翻阅：封面页有项目名称占位文字 → 扉页有「项目简介」标题 → 目录页存在 → 九个章标题在目录中显示为中文编号（一、二、三…）。重点验证：章节中文数字编号是否正确（步骤9的改动）、封面/扉页是否正常显示（步骤5-6 的改动），以及是否有宏命令未定义错误（步骤3-4 的遗漏）。若有编译错误，记录错误信息，进入步骤15修复。",
+            "category": "test",
+            "files": [
+              "main.tex",
+              "cxcyplan.cls",
+              "main.pdf"
+            ],
+            "dependencies": [
+              11,
+              13
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "cd 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf'; xelatex -interaction=nonstopmode main.tex; Write-Host \"Build exit code: $LASTEXITCODE\"",
+              "expected": "Build exit code: 0，main.pdf 生成成功，文件大小大于 0 字节"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "此步骤为只读编译测试，不修改任何源文件，无需回滚。若编译失败，直接进入步骤15修复错误后再重新执行本步骤"
+            },
+            "risk": "low",
+            "estimatedMinutes": 10
+          },
+          {
+            "id": 15,
+            "title": "修复首次编译中出现的语法与逻辑错误",
+            "description": "根据步骤14编译输出的 .log 文件或终端错误信息，逐一定位并修复问题。常见错误类型及对应修复方式：① 'Undefined control sequence \\@etitle' 等旧宏残留引用——在 cxcyplan.cls 的封面函数或其他地方搜索并删除所有 \\@etitle、\\@fen、\\@udc 等残留引用；② 'Undefined control sequence \\makedisclaim' 等——检查 \\makefirstpage 和其他地方是否有未清理的调用；③ minted/bicaption 宏包冲突或未定义——确认相关 \\usepackage 已从 cxcyplan.cls 和 main.tex 中删除；④ ctexset 章节编号语法错误（如 \\chinese 参数格式问题）——参照 ctex 文档，正确语法为 number = {\\chinese{chapter}}；⑤ '\\@cflypage undefined'——在 cxcyplan.cls 中确认 \\def\\@cflypage{} 默认值已添加（步骤4）；⑥ 目录条目显示为问号或乱码——通常需要编译两遍解决。每次修复后执行 xelatex -interaction=nonstopmode main.tex 重新验证，直到编译无 fatal error 为止。将修复的内容记录注释，说明错误原因。",
+            "category": "backend",
+            "files": [
+              "cxcyplan.cls",
+              "main.tex"
+            ],
+            "dependencies": [
+              14
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "cd 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf'; xelatex -interaction=nonstopmode main.tex; Select-String -Path main.log -Pattern '^!.*Error|Fatal' | Select-Object -First 5",
+              "expected": "无输出（main.log 中无 Fatal/Error 行），编译完全成功"
+            },
+            "rollback": {
+              "strategy": "git-revert",
+              "detail": "若修复过程意外引入新问题，可用 git diff cxcyplan.cls 查看具体变更，针对性撤销单个修改；或 git stash 暂存修改后逐步恢复"
+            },
+            "risk": "medium",
+            "estimatedMinutes": 30
+          },
+          {
+            "id": 16,
+            "title": "视觉检查 PDF 并微调封面与正文排版间距",
+            "description": "打开 main.pdf 进行完整视觉检查，按以下清单逐项确认并根据结果调整 cxcyplan.cls 的间距参数：【封面页检查】① LOGO 图片居中且大小适中（约 1/3 页宽）；② 项目名称占位符为大号黑体，视觉突出，位置在页面上方 1/3 处；③ 副标题宋体、比项目名称略小；④ 信息表两列对齐，无错位；⑤ 日期在页面底部（距底边约 2-3cm）；⑥ 封面整体留白比例协调，不显拥挤。【扉页检查】① 「项目简介」标题居中；② 扉页正文行距宽松（目视约 1.8 倍）；③ 占位文字能完整显示。【目录页检查】① 章标题前有「一、二、三」格式编号；② 节标题前有「（一）（二）」格式编号；③ 点线和页码对齐。【正文检查】① 一号章标题居中三号黑体加粗；② 节标题为四号黑体左对齐；③ 正文文字小四号宋体，行距约 1.5 倍；④ 页眉文字为「中国国际大学生创新创业计划书」；⑤ 页脚阿拉伯数字页码居中。发现问题后，调整 cxcyplan.cls 中对应的 vspace/vskip/beforeskip/afterskip 等参数，每次调整后重新编译（xelatex main.tex），直到所有视觉检查项通过。",
+            "category": "frontend",
+            "files": [
+              "cxcyplan.cls"
+            ],
+            "dependencies": [
+              15
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "cd 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf'; xelatex -interaction=nonstopmode main.tex; Write-Host \"Recompile exit: $LASTEXITCODE\"; Test-Path main.pdf",
+              "expected": "编译成功（exit 0），main.pdf 存在，打开后视觉检查通过上述所有清单项（主观判断）"
+            },
+            "rollback": {
+              "strategy": "git-revert",
+              "detail": "如间距调整后引入编译错误，git checkout cxcyplan.cls 回到步骤15修复后的稳定状态（仅影响视觉，不影响功能正确性）"
+            },
+            "risk": "low",
+            "estimatedMinutes": 30
+          },
+          {
+            "id": 17,
+            "title": "清理 image/ 目录下的学术论文示例图片",
+            "description": "清理与学术论文相关的示例图片资源，具体操作：① 先检查已重写的 main.tex 中是否仍有 \\includegraphics 引用 image/ 目录下的旧文件（如 figure.png、table.png 等），若有则先注释或删除这些引用行（新 main.tex 的九章骨架应无此类引用）；② 删除以下文件（如存在）：image/figure.png、image/table.png、image/作者信息.png、image/标题使用.png；③ 删除 image/chap04/ 目录下的所有示例图片文件（如 1.jpg、2.jpg 等），但保留 image/chap04/ 目录本身；④ 检查并删除根目录下的 vscode.png（仅用于原模板使用说明，计划书不需要）；⑤ 在 image/ 目录下创建 README.txt，内容为：「计划书图片存放目录。使用方法：将图片文件放入此目录（或子目录），在 main.tex 中使用 \\includegraphics[width=0.8\\textwidth]{image/文件名.png} 语法引用。」；⑥ 保留根目录下的 title.png（封面 LOGO 使用，不可删除）。",
+            "category": "config",
+            "files": [
+              "image/figure.png",
+              "image/table.png",
+              "image/chap04/",
+              "vscode.png",
+              "image/README.txt"
+            ],
+            "dependencies": [
+              13
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "Get-ChildItem 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\image' -Recurse | Select-Object Name; Test-Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\image\\README.txt'; Test-Path 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\title.png'",
+              "expected": "image/ 下无旧示例图片（figure.png/table.png等不出现），README.txt 存在（True），title.png 存在（True）"
+            },
+            "rollback": {
+              "strategy": "git-revert",
+              "detail": "git checkout image/ 恢复被删除的图片文件（若使用 git 管理）；或从 wzuthesis.cls.bak 所在位置的原始工程目录恢复"
+            },
+            "risk": "low",
+            "estimatedMinutes": 5
+          },
+          {
+            "id": 18,
+            "title": "最终完整编译验证（XeLaTeX 两遍，交付前验收）",
+            "description": "执行最终完整编译流程，确保所有目录条目、页码引用、交叉引用索引均正确更新。操作步骤：① 切换到 pdf/ 目录；② 执行第一遍：xelatex -interaction=nonstopmode main.tex（建立 .aux、.toc 等辅助文件）；③ 执行第二遍：xelatex -interaction=nonstopmode main.tex（利用辅助文件更新目录页码和所有 \\ref/\\autoref 引用）；④ 打开最终 main.pdf 执行交付前验收清单：【结构完整性】封面→扉页→目录→九章正文，页面连续无空白；【目录准确性】全部九章标题和各节标题出现在目录中，对应页码正确，目录编号格式正确（一、→ （一）→ 1.）；【页眉一致性】正文所有页的页眉均为「中国国际大学生创新创业计划书」；【页码连续性】正文从第1页开始，阿拉伯数字页码连续无跳断；【字体正确性】正文宋体小四无乱码，章标题黑体三号居中，无方框字符（表示字体缺失）；【封面元素完整】LOGO、项目名称占位符、信息表各字段、日期均正常显示。所有检查通过后，模板改造完成，cxcyplan 模板可交付用于创新创业计划书撰写。",
+            "category": "test",
+            "files": [
+              "main.tex",
+              "main.pdf",
+              "main.aux",
+              "main.toc"
+            ],
+            "dependencies": [
+              16,
+              17
+            ],
+            "verification": {
+              "type": "manual",
+              "command": "cd 'g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf'; xelatex -interaction=nonstopmode main.tex; xelatex -interaction=nonstopmode main.tex; Write-Host \"Final build exit: $LASTEXITCODE\"; (Get-Item main.pdf).Length",
+              "expected": "Final build exit: 0，main.pdf 文件大小大于 50000 字节（非空 PDF），打开后通过全部视觉验收检查"
+            },
+            "rollback": {
+              "strategy": "file-restore",
+              "detail": "此步骤为最终验证，不修改任何源文件。若二次编译后仍有错误，根据 main.log 中的错误信息返回对应步骤（步骤15处理 cls 错误，步骤16处理排版问题）进行针对性修复"
+            },
+            "risk": "low",
+            "estimatedMinutes": 15
+          }
+        ]
+      },
+      "execute": [
+        "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_12_complete.json",
+        "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_13_complete.json",
+        "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_14_complete.json",
+        "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_15_complete.json",
+        "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_16_complete.json",
+        "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_17_complete.json",
+        "文件检测完成 [主路径]: g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\execute_18_complete.json"
+      ]
+    },
+    "outputPaths": {
+      "design": "g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\design_20260326_155126.md",
+      "plan": "g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\steps_20260326_155126.json",
+      "execute": "g:\\23postgraduate0\\研三下\\国际大学生创新创业2026\\pdf\\.flowcopilot\\runs\\001_20260326_155126_devworkflow\\step_complete_20260326_155126.json"
+    }
+  }
+}

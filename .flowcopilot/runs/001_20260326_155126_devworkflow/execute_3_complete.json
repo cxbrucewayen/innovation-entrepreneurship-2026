@@ -1,0 +1,7 @@
+{
+  "stepId": 3,
+  "title": "删除 cxcyplan.cls 中不需要的元信息宏定义",
+  "status": "completed",
+  "completedAt": "2026-03-26T08:30:00.000Z",
+  "summary": "从 cxcyplan.cls 中删除了 \\etitle、\\fen、\\udc、\\id、\\mi、\\pylx、\\xwlx、\\cmajor、\\cclass、\\cmentor、\\blindcode、\\cabstract、\\eabstract、\\ckeywords、\\ekeywords 共15个宏定义及其所有 \\@xxx 引用；封面函数（makeUndergraduateCover、makeblindpage）已留空并标注 TODO 等待步骤5重写；保留 \\ctitle、\\cauthor、\\cdata 三个宏。"
+}

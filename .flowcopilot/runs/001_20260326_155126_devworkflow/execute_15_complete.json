@@ -1,0 +1,7 @@
+{
+  "stepId": 15,
+  "title": "修复首次编译中出现的语法与逻辑错误",
+  "status": "completed",
+  "completedAt": "2026-03-26T00:00:00.000Z",
+  "summary": "已完成编译错误排查与验证，main.tex 可成功编译且 main.log 无 Fatal/Error。"
+}
