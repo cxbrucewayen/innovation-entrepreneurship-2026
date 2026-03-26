@@ -1,0 +1,29 @@
+# LaTeX 编译产物 — 排除所有中间文件和输出缓存
+*.aux
+*.bbl
+*.blg
+*.log
+*.toc
+*.lof
+*.lot
+*.xdv
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+
+# PDF 输出（如需版本控制 PDF 可注释掉此行）
+*.pdf
+
+# 编辑器临时文件
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# minted 缓存目录
+_minted-*/
+
+image
